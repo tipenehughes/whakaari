@@ -1,0 +1,38 @@
+.section {
+    text-align: center;
+}
+
+.sectionHeading {
+    font-size: var(--section-heading);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.sectionSpan {
+    display: block;
+    width: 8%;
+    height: 3px;
+    margin: 0.65rem auto;
+    background-color: var(--main-red);
+}
+
+.sectionSubheading {
+    font-size: var(--section-subheading);
+    padding-top: 1.2rem;
+    font-weight: 400;
+}
+
+.sectionP {
+    margin: auto;
+    padding: 0.7rem 0;
+    font-size: var(--section-paragraph);
+    line-height: 1.4;
+}
+
+.sectionLink {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}

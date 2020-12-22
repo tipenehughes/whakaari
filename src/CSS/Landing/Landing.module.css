@@ -1,0 +1,56 @@
+.landingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-font);
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    transition: all 3s ease;
+    z-index: -1;
+}
+
+.backgroundImage {
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: 100%;
+    transition: all 3s ease;
+}
+
+.landing {
+    align-self: flex-start;
+    height: auto;
+    width: auto;
+}
+
+.landingHeader {
+    font-size: 5rem;
+    line-height: 1.5;
+}
+
+.landingSubHeader {
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.scrollDown {
+    position: absolute;
+    bottom: 0;
+    width: 4rem;
+    height: auto;
+    font-size: 2.5rem;
+    text-align: center;
+    justify-self: flex-end;
+    margin-top: auto;
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.navLinksContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1 1 33%;
+    height: 100%;
+}
+
+.navLinks {
+    display: grid;
+    place-items: center;
+    margin: 0 0.3rem 0 0.3rem;
+    width: 6rem;
+    height: 100%;
+    text-align: center;
+}
+
+.navLinks a {
+    font-size: 0.9rem;
+}

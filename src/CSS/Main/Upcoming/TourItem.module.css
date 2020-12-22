@@ -1,0 +1,48 @@
+.tourItem {
+    margin: auto;
+    width: 100%;
+    padding: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+.tourItem:last-of-type {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.dateDetails {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 1 33%;
+    height: 100%;
+}
+.date {
+    font-size: 3rem;
+}
+
+.dayMonth {
+    margin-left: 0.2rem;
+    text-align: left;
+}
+
+.dayMonth h3:first-child {
+    color: var(--main-red);
+    padding-top: 0.2rem;
+}
+
+.venue {
+  height: 100%;
+  text-align: center;
+  flex: 1 1 33%;
+}
+
+.city {
+  height: 100%;
+  flex: 1 1 33%;
+  text-align: end;
+  font-size: 5rem;
+}
