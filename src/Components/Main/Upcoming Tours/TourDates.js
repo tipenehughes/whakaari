@@ -36,7 +36,7 @@ const TourDates = () => {
     return (
         <div class={styles.tourDates}>
             {TourData.map((data, index) => {
-                return <TourItem data={data} index={index} />;
+                return <TourItem data={data} index={index} key={index} />;
             })}
         </div>
     );

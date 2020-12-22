@@ -1,0 +1,81 @@
+.contactArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+    background-color: rgb(201, 201, 201);
+}
+
+.formContainer {
+    flex: 1 1 50%;
+    height: 100%;
+    padding-top: 2rem;
+}
+
+.form {
+    height: 100%;
+    width: 80%;
+    text-align: left;
+    margin: auto;
+}
+
+.formControl {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.textArea {
+    height: 120px;
+}
+
+.input,
+.textArea {
+    width: 100%;
+    height: 40px;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    outline: none;
+    font-family: "Lato", sans-serif;
+    padding: 5px;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    border: 1px solid #dfe1e5;
+}
+
+.textArea {
+    height: 120px;
+}
+
+.input:hover,
+.textArea:hover {
+    border-color: rgba(223, 225, 229, 0);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.formSubmit {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: inherit;
+    color: inherit;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.facebookArea {
+    flex: 1 1 50%;
+    height: 100%;
+    width: auto;
+    padding-top: 1rem;
+}

@@ -40,4 +40,5 @@ a {
     min-width: 100%;
     margin: auto;
     padding: 2% 10%;
+    overflow-x: hidden;
 }

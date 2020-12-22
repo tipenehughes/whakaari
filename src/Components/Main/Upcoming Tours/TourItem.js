@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "../../../CSS/Main/Upcoming/TourItem.module.css";
 
-const TourItem = ({ data, index }) => {
+const TourItem = ({ data }) => {
     return (
-        <div className={styles.tourItem} key={index}>
+        <div className={styles.tourItem}>
             <div className={styles.dateDetails}>
                 <div>
                     <h2 className={styles.date}>{data.date}</h2>

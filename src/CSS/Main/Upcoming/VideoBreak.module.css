@@ -1,0 +1,39 @@
+.videoBreak {
+    position: relative;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    height: auto;
+    margin: 5rem 0 0 0;    
+    background-image: linear-gradient(
+            127deg,
+            rgba(0, 0, 0, 0.8) 100%,
+            rgba(0, 0, 0, 0.8) 100%
+        ),
+        url("../../../Assets/img/video-background.jpg");
+
+    background-size: cover;
+}
+
+.videoBreakContainer {
+    width: 80%;
+    height: 90%;
+    margin: auto;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 1.875rem;
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

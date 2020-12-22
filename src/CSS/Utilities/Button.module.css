@@ -3,7 +3,6 @@
     width: 12rem;
     height: 3rem;
     text-transform: uppercase;
-    padding: 0.3rem;
     border: none;
     outline: none;
     font-size: 0.8rem;
@@ -14,6 +13,11 @@
     border: 2px rgba(61, 61, 61, 0.1) solid;
     transition: all 0.3s ease;
     cursor: pointer;
+}
+
+.button span {
+    width: 100%;
+    height: 100%;
 }
 
 .button:hover {
