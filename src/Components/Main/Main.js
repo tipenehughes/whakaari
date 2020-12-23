@@ -27,9 +27,9 @@ const Main = () => {
     return (
         <main>
             <Landing />
-            {sections.map((data, index) => {
+            {/* {sections.map((data, index) => {
                 return <Section data={data} index={index} key={index} />;
-            })}
+            })} */}
         </main>
     );
 };

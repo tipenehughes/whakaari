@@ -1,27 +1,14 @@
 .button {
-    background: var(--main-red);
-    width: 12rem;
-    height: 3rem;
+    margin-top: 2rem;
+    height: 5rem;
+    width: 14rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    background-color: #a10000;
     border: none;
     outline: none;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: var(--light-font);
-    border-radius: 0.2rem;
-    letter-spacing: 1.2;
-    border: 2px rgba(61, 61, 61, 0.1) solid;
-    transition: all 0.3s ease;
+    border-radius: 4px;
     cursor: pointer;
-}
-
-.button span {
-    width: 100%;
-    height: 100%;
-}
-
-.button:hover {
-    background: rgba(61, 61, 61, 0.3);
-    border: 2px solid var(--main-red);
-    transition: all 0.3s ease;
 }

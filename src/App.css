@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Patua+One&family=Poiret+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@
 
 body {
     line-height: 1.2;
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     background-color: var(--background-color);
