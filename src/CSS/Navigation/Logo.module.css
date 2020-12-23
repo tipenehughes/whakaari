@@ -2,7 +2,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex: 1 1 33%;
+    flex: 1 1 25%;
     height: 100%;
     font-family: "Poiret One", arial, sans-serif;
     text-align: center;
@@ -14,12 +14,12 @@
 }
 
 .header {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
 }
 
 .subHeader {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 

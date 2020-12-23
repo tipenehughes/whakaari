@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     color: var(--light-font);
+    font-family: "Lato", sans-serif;
 }
 
 .background {
@@ -32,15 +33,31 @@
 }
 
 .landingHeader {
-    font-size: 5rem;
+    font-size: 6.5rem;
     line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    /* text-transform: uppercase; */
 }
 
 .landingSubHeader {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     letter-spacing: 0.1rem;
     margin-bottom: 2rem;
     font-weight: 400;
+}
+
+.landingButton {
+    height: 5rem;
+    width: 15rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    background-color: #a10000;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .scrollDown {

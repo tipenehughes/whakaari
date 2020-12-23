@@ -1,0 +1,10 @@
+.imageFlexItem {
+  display: grid;
+  place-items: center;
+}
+
+.image {
+  height: 80%;
+  width: 100%;
+  margin: auto;
+}

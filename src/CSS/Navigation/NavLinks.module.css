@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex: 1 1 33%;
+    flex: 1 1 50%;
     height: 100%;
 }
 
@@ -16,5 +16,5 @@
 }
 
 .navLinks a {
-    font-size: 0.9rem;
+    font-size: 1.4rem;
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import Background from "./Background";
-import Button from "../../Utilities/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import styles from "../../../CSS/Landing/Landing.module.css";
@@ -18,7 +17,7 @@ const Landing = () => {
                         to the World.
                     </h3>
                 </div>
-                <Button input={"See Upcoming Tour"} />
+                <button className={styles.landingButton}>Upcoming Tour</button>
             </div>
             <div className={styles.scrollDown}>
                 <FontAwesomeIcon icon={faAngleDown} className={styles.icon} />

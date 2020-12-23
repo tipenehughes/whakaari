@@ -5,7 +5,7 @@ import Languages from "./Languages";
 import styles from "../../CSS/Navigation/NavBar.module.css";
 
 const NavBar = () => {
-    const navigationLinks = ["About", "Tour", "Contact"];
+    const navigationLinks = ["About", "Tour", "Gallery", "Contact"];
 
     return (
         <nav className={styles.navBar} id="header">

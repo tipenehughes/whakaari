@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../../CSS/Main/Upcoming/VideoBreak.module.css";
+import styles from "../../../CSS/Main/VideoBreak/VideoBreak.module.css";
 
 const VideoBreak = () => {
     return (
