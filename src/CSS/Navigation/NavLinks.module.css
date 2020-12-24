@@ -17,4 +17,10 @@
 
 .navLinks a {
     font-size: 1.4rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.navLinks .scroll {
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
 }

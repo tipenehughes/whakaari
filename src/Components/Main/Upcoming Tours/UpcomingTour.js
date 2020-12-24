@@ -1,5 +1,9 @@
 import React from "react";
 import TourCards from "./TourCards";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import czech from "../../../Assets/img/flags/czech.svg";
+import austria from "../../../Assets/img/flags/austria.svg";
 import styles from "../../../CSS/Main/Upcoming/UpcomingTour.module.css";
 
 const UpcomingTour = () => {
@@ -9,21 +13,24 @@ const UpcomingTour = () => {
             date: "12",
             month: "NOVEMBER",
             venue: "Národní divadlo",
-            city: "PRAHA",
+            city: "PRAGUE",
+            flag: czech,
         },
         {
             day: "Tues",
             date: "16",
             month: "NOVEMBER",
             venue: "Puma Place",
-            city: "PRAHA",
+            city: "PRAGUE",
+            flag: czech,
         },
         {
             day: "Sat",
             date: "20",
             month: "NOVEMBER",
-            venue: "Grandhotel Pupp",
-            city: "PRAHA",
+            venue: "Staatsoper",
+            city: "VIENNA",
+            flag: austria,
         },
     ];
     return (
@@ -38,12 +45,12 @@ const UpcomingTour = () => {
             </div>
             <div className={styles.tourArrows}>
                 <div className={styles.arrowContainer}>
-                    <i className="fas fa-arrow-left"></i>
+                    <FontAwesomeIcon icon={faArrowLeft} />
                     <p>Earlier</p>
                 </div>
                 <div className={styles.arrowContainer}>
                     <p>Later</p>
-                    <i className="fas fa-arrow-right"></i>
+                    <FontAwesomeIcon icon={faArrowRight} />
                 </div>
             </div>
         </section>

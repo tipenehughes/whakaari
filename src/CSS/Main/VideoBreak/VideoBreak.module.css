@@ -1,11 +1,11 @@
 .videoBreak {
     position: relative;
-    width: 100vw;
-    left: calc(-50vw + 50%);
+    width: 100.05%;
+    left: 50%;
+    transform: translateX(-50%);
     height: auto;
     margin: 0;
     background-color: #000;
-    overflow: hidden;
 }
 
 .videoBreakContainer {

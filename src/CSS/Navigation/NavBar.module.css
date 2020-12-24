@@ -10,4 +10,10 @@
     color: var(--light-font);
     text-transform: uppercase;
     z-index: 100;
+    transition: all 0.2s ease;
+}
+
+.scroll {
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.9);
 }

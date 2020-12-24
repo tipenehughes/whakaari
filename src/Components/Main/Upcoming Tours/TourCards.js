@@ -12,8 +12,13 @@ const TourCards = ({ data }) => {
                 </div>
             </div>
             <div className={styles.location}>
-                <h4>{data.venue}</h4>
-                <h4>{data.city}</h4>
+                <div className={styles.flexLocation}>
+                    <h4>{data.venue}</h4>
+                    <h4>{data.city}</h4>
+                </div>
+                <div className={styles.flag}>
+                    <img src={data.flag} alt="" />
+                </div>
             </div>
             <div className={styles.tourDescription}></div>
             <div className={styles.tourButton}>

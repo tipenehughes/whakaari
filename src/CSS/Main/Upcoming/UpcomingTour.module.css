@@ -55,6 +55,7 @@
     align-items: center;
     font-size: 2rem;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .arrowContainer p:first-of-type {
@@ -91,6 +92,9 @@
 }
 
 .location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex: 1 1 20%;
     width: 100%;
     font-size: 2.3rem;
@@ -101,8 +105,24 @@
     font-weight: 400;
 }
 
+.flex-location {
+    height: 100%;
+    width: auto;
+}
+
+.flag {
+    height: 100%;
+    width: auto;
+}
+
+.flag img {
+    height: 6rem;
+    width: auto;
+}
+
 .tourDescription {
     flex: 1 1 60%;
+    width: 100%;
 }
 
 .tourButton {

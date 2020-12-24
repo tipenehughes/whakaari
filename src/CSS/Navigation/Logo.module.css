@@ -16,11 +16,24 @@
 .header {
     font-size: 3rem;
     font-weight: 400;
+    transition: all 0.2s ease-in-out;
+}
+
+.scroll .header {
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+    margin-bottom: -2px;
 }
 
 .subHeader {
     font-size: 2rem;
     font-weight: 400;
+    transition: all 0.2s ease-in-out;
+}
+
+.scroll .subHeader {
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
 }
 
 .span {
@@ -29,4 +42,10 @@
     height: 0.2rem;
     background-color: var(--main-red);
     margin: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.span.scroll {
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
 }
