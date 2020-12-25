@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
-import Languages from "./Languages";
+import Languages from "./LangNav/Languages";
 import styles from "../../CSS/Navigation/NavBar.module.css";
 
 const NavBar = () => {
