@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "../../../CSS/Navigation/Languages.module.css";
 
-const LangDropDown = ({ selection, langs, handleSetSelection }) => {
+const LangDropDown = ({ hover, selection, langs, handleSetSelection }) => {
     const removeSelection = (arr) => {
         const index = arr.findIndex((v) => v.lang === selection.lang);
         if (index > -1) {
@@ -14,9 +14,9 @@ const LangDropDown = ({ selection, langs, handleSetSelection }) => {
         <div className={styles.dropDown} key={selection}>
             {removeSelection(langs).map((lang) => {
                 return (
-                    <div className={styles.languagesContainer}>
+                    <div className={`${styles.languagesContainer} ${hover && styles.hover}`}>
                         <div
-                            className={styles.languages}
+                            className={`${styles.languages} ${styles.langOptions}`}
                             aria-label="Language selector"
                             data-lang={lang.lang}
                             data-code={lang.code}

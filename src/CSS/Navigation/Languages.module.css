@@ -1,21 +1,22 @@
 .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     flex: 1 1 25%;
     height: auto;
 }
 
 .languagesContainer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     height: 100%;
     text-align: center;
     font-weight: 600;
     font-size: 1.4rem;
+    /* padding: 0.25rem 0; */
 }
 
 .languages {
     width: 8rem;
-    height: 3rem;
+    height: auto;
     cursor: pointer;
     text-align: center;
     border-radius: 3px 3px 0 0;
@@ -25,10 +26,14 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 400;
     margin: auto;
     pointer-events: none;
+}
+
+.langOptions:hover {
+    background-color: rgba(61, 61, 61, 0.9);
 }
 
 .langActive img {
@@ -40,4 +45,8 @@
 .dropDown {
     position: absolute;
     right: 1.5rem;
+}
+
+.hover {
+    background-color: rgba(61, 61, 61, 0.5);
 }

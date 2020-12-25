@@ -30,26 +30,31 @@ const Languages = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.languagesContainer}>
+            <div
+                className={`${styles.languagesContainer} ${
+                    hover && styles.hover
+                }`}
+                onMouseEnter={() => setHover(true)}
+                onMouseLeave={() => setHover(false)}
+            >
                 <div
                     className={styles.languages}
                     aria-label="Language selector"
-                    onMouseEnter={() => setHover(true)}
-                    // onMouseLeave={() => setHover(false)}
                 >
                     <a class={styles.langActive} href="#">
                         <img src={selection.lang} id="en" alt="English" />
                         <p>{selection.code}</p>
                     </a>
                 </div>
+                {hover && (
+                    <LangDropDown
+                        hover={hover}
+                        langs={langs}
+                        selection={selection}
+                        handleSetSelection={handleSetSelection}
+                    />
+                )}
             </div>
-            {hover && (
-                <LangDropDown
-                    langs={langs}
-                    selection={selection}
-                    handleSetSelection={handleSetSelection}
-                />
-            )}
         </div>
     );
 };
