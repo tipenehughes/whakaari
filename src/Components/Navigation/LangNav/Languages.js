@@ -41,7 +41,7 @@ const Languages = () => {
                     className={styles.languages}
                     aria-label="Language selector"
                 >
-                    <a class={styles.langActive} href="#">
+                    <a class={styles.langActive} href="#placeholder">
                         <img src={selection.lang} id="en" alt="English" />
                         <p>{selection.code}</p>
                     </a>

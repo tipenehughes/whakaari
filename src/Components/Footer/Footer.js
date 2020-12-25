@@ -6,11 +6,11 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.links}>
-                <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">TOUR</a>
-                <a href="#">GALLERY</a>
-                <a href="#">CONTACT</a>
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#tour">TOUR</a>
+                <a href="#gallery">GALLERY</a>
+                <a href="#contact">CONTACT</a>
             </div>
             <div className={styles.sponsor}>
                 <p>Proudly sponsored by</p>

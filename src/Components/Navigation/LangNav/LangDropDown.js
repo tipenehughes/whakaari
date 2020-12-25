@@ -12,9 +12,14 @@ const LangDropDown = ({ hover, selection, langs, handleSetSelection }) => {
 
     return (
         <div className={styles.dropDown} key={selection}>
-            {removeSelection(langs).map((lang) => {
+            {removeSelection(langs).map((lang, i) => {
                 return (
-                    <div className={`${styles.languagesContainer} ${hover && styles.hover}`}>
+                    <div
+                        className={`${styles.languagesContainer} ${
+                            hover && styles.hover
+                        }`}
+                        key={i}
+                    >
                         <div
                             className={`${styles.languages} ${styles.langOptions}`}
                             aria-label="Language selector"
@@ -22,7 +27,7 @@ const LangDropDown = ({ hover, selection, langs, handleSetSelection }) => {
                             data-code={lang.code}
                             onClick={handleSetSelection}
                         >
-                            <a class={styles.langActive} href="#">
+                            <a class={styles.langActive} href="#placeholder">
                                 <img src={lang.lang} id="en" alt="English" />
                                 <p>{lang.code}</p>
                             </a>

@@ -6,7 +6,7 @@ const ContactForm = () => {
         <div className={`${styles.formContainer} flexItem`}>
             <form id="form" method="POST" name="contact" data-netlify="true">
                 <div className={styles.formControl}>
-                    <label for="name" className={styles.formLabel}>
+                    <label htmlFor="name" className={styles.formLabel}>
                         Name
                     </label>
                     <input
@@ -18,7 +18,7 @@ const ContactForm = () => {
                     />
                 </div>
                 <div className={styles.formControl}>
-                    <label for="email" className={styles.formLabel}>
+                    <label htmlFor="email" className={styles.formLabel}>
                         Email
                     </label>
                     <input
@@ -30,7 +30,7 @@ const ContactForm = () => {
                     />
                 </div>
                 <div className={styles.formControl}>
-                    <label for="message" className={styles.formLabel}>
+                    <label htmlFor="message" className={styles.formLabel}>
                         Message
                     </label>
                     <textarea

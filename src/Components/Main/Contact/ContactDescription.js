@@ -19,13 +19,13 @@ const ContactDescription = () => {
             </p>
             <p className="text">We look forward to hearing from you!</p>
             <div className={styles.socialIcons}>
-                <a href="">
+                <a href="#facebook">
                     <FontAwesomeIcon icon={faFacebookSquare} />
                 </a>
-                <a href="">
+                <a href="#instagram">
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>
-                <a href="">
+                <a href="#youtube">
                     <FontAwesomeIcon icon={faYoutube} />
                 </a>
             </div>

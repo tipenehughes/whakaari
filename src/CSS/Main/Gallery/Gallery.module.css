@@ -1,4 +1,5 @@
 .gallery .flexItem {
+  position: relative;
   flex: 1 1 30%;
   padding: 0;
 }
