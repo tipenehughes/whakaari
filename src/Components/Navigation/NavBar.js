@@ -16,7 +16,7 @@ const NavBar = () => {
         scrollFunction();
     };
 
-    const navigationLinks = ["About", "Tour", "Gallery", "Contact"];
+    const navigationLinks = ["about", "tour", "gallery", "contact"];
 
     return (
         <nav className={`${styles.navBar} ${styles[navScroll]}`} id="header">

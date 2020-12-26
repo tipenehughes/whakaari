@@ -5,6 +5,14 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import styles from "../../../CSS/Landing/Landing.module.css";
 
 const Landing = () => {
+    const scrollToAbout = () => {
+        const aboutSection = document.getElementById("about");
+        aboutSection.scrollIntoView();
+    };
+    const scrollToTours = () => {
+        const tourSection = document.getElementById("tour");
+        tourSection.scrollIntoView();
+    };
     return (
         <section className={`container ${styles.landingContainer}`}>
             <Background />
@@ -17,10 +25,19 @@ const Landing = () => {
                         to the World.
                     </h3>
                 </div>
-                <button className={styles.landingButton}>Upcoming Tour</button>
+                <button
+                    className={styles.landingButton}
+                    onClick={scrollToTours}
+                >
+                    Upcoming Tour
+                </button>
             </div>
             <div className={styles.scrollDown}>
-                <FontAwesomeIcon icon={faAngleDown} className={styles.icon} />
+                <FontAwesomeIcon
+                    icon={faAngleDown}
+                    className={styles.icon}
+                    onClick={scrollToAbout}
+                />
             </div>
         </section>
     );

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import GridItems from "./GridItems";
+import Modal from "./Modal";
 import img1 from "../../../Assets/img/gallery/1.png";
 import img2 from "../../../Assets/img/gallery/2.jpg";
 import img3 from "../../../Assets/img/gallery/3.jpg";
@@ -18,18 +19,28 @@ const Gallery = () => {
         setImage(e.target.getAttribute("src"));
     };
 
-    const handleCloseModal = () => {
+    const handleCloseModal = (e) => {        
         setModal(false);
         setImage("");
     };
 
+    const scrollToContact = () => {
+        const aboutSection = document.getElementById("contact");
+        aboutSection.scrollIntoView();
+    };
+
     const images = [img1, img2, img3, img4, img5, img6, img7];
     return (
-        <section class={`section ${styles.gallery}`}>
+        <section class={`section ${styles.gallery}`} id="gallery">
+            {modal && (
+                <Modal image={image} handleCloseModal={handleCloseModal} />
+            )}
             <div class={`description ${styles.flexItem}`}>
                 <h2 class={`header ${styles.header}`}>Gallery</h2>
                 <h3 class="subHeader">See some of our recent highlights</h3>
-                <button class="button">Book an event</button>
+                <button class="button" onClick={scrollToContact}>
+                    Book an event
+                </button>
             </div>
             <div class={styles.grid}>
                 {images.map((data, i) => {

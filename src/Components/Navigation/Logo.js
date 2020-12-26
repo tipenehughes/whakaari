@@ -3,7 +3,10 @@ import styles from "../../CSS/Navigation/Logo.module.css";
 
 const Logo = ({ scroll }) => {
     return (
-        <header className={styles.logoContainer}>
+        <header
+            className={styles.logoContainer}
+            onClick={() => window.scrollTo(0, 0)}
+        >
             <div className={`${styles.logo} ${styles[scroll]}`}>
                 <h1 className={styles.header} id="whakaari">
                     WHAKAARI

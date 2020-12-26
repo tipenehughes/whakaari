@@ -40,7 +40,7 @@ const ContactForm = () => {
                         className={`${styles.formInput} ${styles.formTextarea}`}
                     ></textarea>
                 </div>
-                <button className="button">
+                <button className={`button ${styles.submitBtn}`}>
                     <input
                         type="submit"
                         className={styles.formSubmit}

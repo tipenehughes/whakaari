@@ -3,20 +3,40 @@ import sponsor from "../../Assets/img/sponsor.png";
 import styles from "../../CSS/Footer/Footer.module.css";
 
 const Footer = () => {
+    const navigationLinks = ["about", "tour", "gallery", "contact"];
+    const scrollTo = (e, link) => {
+        e.preventDefault();
+        const aboutSection = document.getElementById(link);
+        aboutSection.scrollIntoView();
+    };
     return (
         <footer className={styles.footer}>
             <div className={styles.links}>
-                <a href="#home">HOME</a>
-                <a href="#about">ABOUT</a>
-                <a href="#tour">TOUR</a>
-                <a href="#gallery">GALLERY</a>
-                <a href="#contact">CONTACT</a>
+                {navigationLinks.map((links) => {
+                    return (
+                        <a
+                            onClick={(e) => {
+                                scrollTo(e, links);
+                            }}
+                            href={`#${links}`}
+                            aria-label={`${links} section`}
+                        >
+                            {links.toUpperCase()}
+                        </a>
+                    );
+                })}
             </div>
             <div className={styles.sponsor}>
-                <p>Proudly sponsored by</p>
-                <div className={styles.sponsorImage}>
+                <p>Proud partners of</p>
+                <a
+                    className={styles.sponsorImage}
+                    href="https://www.aotearoa.cz/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="Link to sponsor"
+                >
                     <img src={sponsor} alt="" />
-                </div>
+                </a>
             </div>
             <div className={styles.copyright}>
                 <p>Whakaari Rotorua 2020</p>

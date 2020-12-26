@@ -19,13 +19,28 @@ const ContactDescription = () => {
             </p>
             <p className="text">We look forward to hearing from you!</p>
             <div className={styles.socialIcons}>
-                <a href="#facebook">
+                <a
+                    href="https://www.facebook.com/WhakaariRotorua/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="Facebook link"
+                >
                     <FontAwesomeIcon icon={faFacebookSquare} />
                 </a>
-                <a href="#instagram">
+                <a
+                    href="https://www.instagram.com/whakaarirotorua/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="Instagram link"
+                >
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>
-                <a href="#youtube">
+                <a
+                    href="https://www.youtube.com/channel/UCu34Rwtq3CRwPoyndkTcnTA"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="YouTube link"
+                >
                     <FontAwesomeIcon icon={faYoutube} />
                 </a>
             </div>

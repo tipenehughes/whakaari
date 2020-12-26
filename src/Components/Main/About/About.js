@@ -3,8 +3,12 @@ import styles from "../../../CSS/Main/About/About.module.css";
 import img from "../../../Assets/img/about.jpg";
 
 const About = () => {
+    const scrollToContact = () => {
+        const aboutSection = document.getElementById("contact");
+        aboutSection.scrollIntoView();
+    };
     return (
-        <section className="section">
+        <section className="section" id="about">
             <div className={`flexItem ${styles.imageFlexItem}`}>
                 <img className={styles.image} src={img} alt="" />
             </div>
@@ -24,7 +28,9 @@ const About = () => {
                     leader Frank Grapl Junior, as his father, František Grapl,
                     emigrated to New Zealand in 1950.
                 </p>
-                <button className="button">Book an event</button>
+                <button className="button" onClick={scrollToContact}>
+                    Book an event
+                </button>
             </div>
         </section>
     );

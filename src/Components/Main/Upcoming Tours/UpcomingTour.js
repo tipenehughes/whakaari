@@ -73,7 +73,7 @@ const UpcomingTour = () => {
     };
 
     return (
-        <section className={`section ${styles.tour}`}>
+        <section className={`section ${styles.tour}`} id="tour">
             <div className={styles.tourHeader}>
                 <h2 className="header">Upcoming Tour Dates</h2>
             </div>
