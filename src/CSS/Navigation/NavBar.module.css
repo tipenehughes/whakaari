@@ -17,3 +17,22 @@
     height: 10vh;
     background: rgba(0, 0, 0, 0.9);
 }
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 769px) {
+    .navBar {
+        height: 9vh
+    }
+
+    .scroll {
+        height: 7vh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navBar {
+        display: none;
+    }
+}

@@ -9,7 +9,7 @@ const GridItems = ({ data, index, handleSetModal }) => {
                 onClick={handleSetModal}
                 src={data}
                 alt=""
-                class={styles.gridImage}
+                className={styles.gridImage}
             />
         </div>
     );

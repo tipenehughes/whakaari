@@ -4,7 +4,13 @@
 }
 
 .image {
-  height: 80%;
+  height: auto;
   width: 100%;
   margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .imageFlexItem {
+    display: none;
+  }
 }

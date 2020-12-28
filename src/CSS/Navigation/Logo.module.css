@@ -14,7 +14,7 @@
 }
 
 .header {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 400;
     transition: all 0.2s ease-in-out;
 }
@@ -26,7 +26,7 @@
 }
 
 .subHeader {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 400;
     transition: all 0.2s ease-in-out;
 }

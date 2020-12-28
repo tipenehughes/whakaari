@@ -1,6 +1,7 @@
 .gallery .flexItem {
-  flex: 1 1 30%;
-  padding: 0;
+  flex: 1 1 25%;
+  height: 100%;
+  padding: 0 1rem 0 0;
 }
 
 .gallery .header {
@@ -52,4 +53,19 @@
 }
 .image6 {
   grid-area: image7;
+}
+
+/* Media Queries */
+
+/* @media only screen and (max-width: 1025px) {
+  
+} */
+
+@media only screen and (max-width: 769px) {
+  .gallery .flexItem {
+    padding: 0;
+  }
+  .gridItem:nth-of-type(2) {
+    display: none;
+  }
 }

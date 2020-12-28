@@ -33,23 +33,23 @@
 }
 
 .landingHeader {
-    font-size: 6.5rem;
+    font-size: 6rem;
     line-height: 1.5;
     font-family: "Lato", sans-serif;
     /* text-transform: uppercase; */
 }
 
 .landingSubHeader {
-    font-size: 2.5rem;
+    font-size: 3rem;
     letter-spacing: 0.1rem;
     margin-bottom: 2rem;
     font-weight: 400;
 }
 
 .landingButton {
-    height: 5rem;
-    width: 15rem;
-    font-size: 1.3rem;
+    height: 4.5rem;
+    width: 14rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 500;
     color: #fff;
@@ -70,4 +70,23 @@
     justify-self: flex-end;
     margin-top: auto;
     cursor: pointer;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 480px) {
+    .landing {
+        align-self: center;
+        text-align: center;
+    }
+    .landingHeader {
+        font-size: 7rem;
+    }
+    .landingSubHeader {
+        font-size: 2.5rem;
+    }
+    
+    .landingButton {
+        width: 20rem;
+    }
 }

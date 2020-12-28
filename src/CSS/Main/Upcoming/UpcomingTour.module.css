@@ -2,6 +2,7 @@
     background-color: #000;
     color: #fff;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .tourHeader {
@@ -78,13 +79,13 @@
 }
 
 .dateDetails > h3:first-of-type {
-    font-size: 6rem;
+    font-size: 5rem;
     margin-right: 0.5rem;
 }
 
 .dateDetails h3 {
     line-height: 1;
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 
 .dateDetails h3:nth-last-of-type(2) {
@@ -97,8 +98,11 @@
     align-items: center;
     flex: 1 1 20%;
     width: 100%;
-    font-size: 2.3rem;
     padding-top: 2rem;
+}
+
+.location h4 {
+    font-size: 2rem;
 }
 
 .location h4:first-of-type {
@@ -128,4 +132,30 @@
 .tourButton {
     flex: 1 1 10%;
     width: 100%;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1025px) {
+    .tourCards {
+        width: 150%;
+        flex: 1 1 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .tourCards {
+        width: 100%;        
+    }
+    .tourHeader h2 {
+        text-align: center;
+    }
+    .card {
+        width: 90%;
+        margin: auto;
+    }
+    .card:first-of-type,
+    .card:last-of-type {
+        display: none;
+    }
 }

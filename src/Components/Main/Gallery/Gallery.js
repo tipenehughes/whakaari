@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import GridItems from "./GridItems";
 import Modal from "./Modal";
 import img1 from "../../../Assets/img/gallery/1.png";
@@ -13,13 +13,22 @@ import styles from "../../../CSS/Main/Gallery/Gallery.module.css";
 const Gallery = () => {
     const [modal, setModal] = useState(false);
     const [image, setImage] = useState("");
+    const [screenWidth, setScreenWidth] = useState("");
+
+    const handleSetScreenWidth = () => {
+        setScreenWidth(window.innerWidth);
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", handleSetScreenWidth);
+    }, [screenWidth]);
 
     const handleSetModal = (e) => {
         setModal(true);
         setImage(e.target.getAttribute("src"));
     };
 
-    const handleCloseModal = (e) => {        
+    const handleCloseModal = (e) => {
         setModal(false);
         setImage("");
     };
@@ -31,18 +40,35 @@ const Gallery = () => {
 
     const images = [img1, img2, img3, img4, img5, img6, img7];
     return (
-        <section class={`section ${styles.gallery}`} id="gallery">
+        <section className={`section ${styles.gallery}`} id="gallery">
             {modal && (
                 <Modal image={image} handleCloseModal={handleCloseModal} />
             )}
-            <div class={`description ${styles.flexItem}`}>
-                <h2 class={`header ${styles.header}`}>Gallery</h2>
-                <h3 class="subHeader">See some of our recent highlights</h3>
-                <button class="button" onClick={scrollToContact}>
-                    Book an event
-                </button>
-            </div>
-            <div class={styles.grid}>
+
+            {window.innerWidth >= 769 && (
+                <div className={`description ${styles.flexItem}`}>
+                    <h2 className={`header ${styles.header}`}>Gallery</h2>
+                    <h3 className="subHeader">
+                        See some of our recent highlights
+                    </h3>
+                    <button className="button" onClick={scrollToContact}>
+                        Book an event
+                    </button>
+                </div>
+            )}
+
+            <div className={styles.grid}>
+                {window.innerWidth < 769 && (
+                    <div className={`description ${styles.flexItem}`}>
+                        <h2 className={`header ${styles.header}`}>Gallery</h2>
+                        <h3 className="subHeader">
+                            See some of our recent highlights
+                        </h3>
+                        <button className="button" onClick={scrollToContact}>
+                            Book an event
+                        </button>
+                    </div>
+                )}
                 {images.map((data, i) => {
                     return (
                         <GridItems

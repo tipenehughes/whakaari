@@ -13,13 +13,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .links a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
     width: 20%;
     text-align: center;
@@ -50,4 +50,13 @@
     font-size: 1rem;
     color: #fff;
     text-transform: uppercase;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 769px) {
+    .links, .sponsor {
+        width: 80%;
+    }
 }

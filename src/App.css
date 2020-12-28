@@ -21,7 +21,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     background-color: var(--background-color);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 a {
@@ -44,13 +44,12 @@ a {
 }
 
 .section {
-    /* position: relative; */
     height: 120vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5% 5%;
+    padding: 5%;
 }
 
 .flexItem {
@@ -61,7 +60,7 @@ a {
 
 .header {
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 900;
     margin-bottom: 2rem;
     line-height: 0.8;
@@ -69,14 +68,14 @@ a {
 
 .subHeader {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 0.5rem;
     color: #3c3c3c;
 }
 
 .text {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1.2;
 }
 
@@ -89,9 +88,9 @@ a {
 
 .button {
     margin-top: 2rem;
-    height: 5rem;
+    height: 4.5rem;
     width: 14rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 700;
     color: #fff;
@@ -110,4 +109,42 @@ a {
         -4px -4px 12px 0 rgba(255, 255, 255, 0);
     transform: scale(0.98);
     transition: all ease 0.1s;
+}
+
+/* Media querires */
+
+@media only screen and (max-width: 1300px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .section {
+        height: 100vh;
+        padding: 2.5%;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .section {
+        height: 80vh;
+    }
+
+    main section:nth-child(2) {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .flexItem {
+        width: 100%;
+    }
+    main .section:last-of-type {
+        flex-direction: column-reverse;
+    }
 }
