@@ -126,12 +126,12 @@ a {
     }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
     .section {
         height: 80vh;
     }
 
-    main section:nth-child(2) {
+    main section:nth-of-type(2) {
         height: 50vh;
     }
 }
@@ -144,7 +144,11 @@ a {
     .flexItem {
         width: 100%;
     }
-    main .section:last-of-type {
+    main section:last-of-type {
         flex-direction: column-reverse;
+    }
+
+    main section:nth-of-type(5) {
+        height: 70vh;
     }
 }

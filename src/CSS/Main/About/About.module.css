@@ -1,16 +1,18 @@
 .imageFlexItem {
-  display: grid;
-  place-items: center;
+    display: grid;
+    place-items: center;
 }
 
 .image {
-  height: auto;
-  width: 100%;
-  margin: auto;
+    height: auto;
+    width: 100%;
+    margin: auto;
+}
+@media only screen and (max-width: 768px) {
 }
 
 @media only screen and (max-width: 480px) {
-  .imageFlexItem {
-    display: none;
-  }
+    .imageFlexItem {
+        display: none;
+    }
 }

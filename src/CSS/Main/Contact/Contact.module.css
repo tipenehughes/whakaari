@@ -100,10 +100,10 @@ form .submitBtn {
     .formInput {
         width: 100%;
     }
-  }
+}
 
-  @media only screen and (max-width: 480px) {
-      form {
-          margin-top: 0;
-      }
-  }
+@media only screen and (max-width: 480px) {
+    form {
+        margin-top: 0;
+    }
+}

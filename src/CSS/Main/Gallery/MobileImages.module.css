@@ -1,13 +1,3 @@
-.gallery .flexItem {
-    flex: 1 1 25%;
-    height: 100%;
-    padding: 0 1rem 0 0;
-}
-
-.gallery .header {
-    margin-bottom: 0rem;
-}
-
 .carouselContainer {
     flex: 1 1 60%;
     width: 105%;
@@ -48,21 +38,4 @@
 
 .arrowContainer:last-of-type {
     right: 3%;
-}
-
-/* Media Queries */
-
-/* @media only screen and (max-width: 1025px) {
-  
-} */
-
-@media only screen and (max-width: 768px) {
-    .gallery {
-        flex-direction: column;
-    }
-    .gallery .flexItem {
-        width: 100%;
-        padding: 2.5% 2.5% 2.5% 5%;
-        flex-wrap: wrap;
-    }
 }

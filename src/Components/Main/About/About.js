@@ -8,7 +8,7 @@ const About = () => {
         aboutSection.scrollIntoView();
     };
     return (
-        <section className="section" id="about">
+        <section className={`section ${styles.about}`} id="about">
             <div className={`flexItem ${styles.imageFlexItem}`}>
                 <img className={styles.image} src={img} alt="" />
             </div>
