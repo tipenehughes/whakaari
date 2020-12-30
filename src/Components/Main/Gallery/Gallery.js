@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 import Carousel from "./Carousel";
 
-import img1 from "../../../Assets/img/gallery/1.png";
+import img1 from "../../../Assets/img/gallery/1.jpg";
 import img2 from "../../../Assets/img/gallery/2.jpg";
-import img3 from "../../../Assets/img/gallery/3.jpg";
+import img3 from "../../../Assets/img/gallery/3.png";
 import img4 from "../../../Assets/img/gallery/4.jpg";
 import img5 from "../../../Assets/img/gallery/5.jpg";
 import img6 from "../../../Assets/img/gallery/6.png";

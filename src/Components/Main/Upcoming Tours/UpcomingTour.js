@@ -87,7 +87,10 @@ const UpcomingTour = () => {
                     className={styles.arrowContainer}
                     onClick={() => handleSetCardPlacementPrev()}
                 >
-                    <FontAwesomeIcon icon={faArrowLeft} />
+                    <FontAwesomeIcon
+                        className={styles.arrowLeft}
+                        icon={faArrowLeft}
+                    />
                     <p>Earlier</p>
                 </div>
                 <div
@@ -95,7 +98,10 @@ const UpcomingTour = () => {
                     onClick={() => handleSetCardPlacementNext()}
                 >
                     <p>Later</p>
-                    <FontAwesomeIcon icon={faArrowRight} />
+                    <FontAwesomeIcon
+                        className={styles.arrowRight}
+                        icon={faArrowRight}
+                    />
                 </div>
             </div>
         </section>

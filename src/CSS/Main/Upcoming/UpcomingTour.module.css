@@ -57,6 +57,26 @@
     font-size: 2rem;
     text-transform: uppercase;
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.arrowContainer:hover {
+    color: #c30000;
+    transition: color 0.3s ease;
+}
+
+.arrowContainer:hover .arrowLeft {
+    transform: translateX(-5px);
+    transition: transform 0.3s ease;
+}
+.arrowContainer:hover .arrowRight {
+    transform: translateX(5px);
+    transition: transform 0.3s ease;
+}
+
+.arrowLeft,
+.arrowRight {
+    transition: transform 0.3s ease;
 }
 
 .arrowContainer p:first-of-type {
@@ -145,7 +165,7 @@
 
 @media only screen and (max-width: 480px) {
     .tourCards {
-        width: 100%;        
+        width: 100%;
     }
     .tourHeader h2 {
         text-align: center;

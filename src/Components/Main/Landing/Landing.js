@@ -1,4 +1,5 @@
 import React from "react";
+import MobileLogo from "./MobileLogo";
 import Background from "./Background";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
@@ -15,6 +16,7 @@ const Landing = () => {
     };
     return (
         <section className={`container ${styles.landingContainer}`}>
+            {window.innerWidth < 480 && <MobileLogo />}
             <Background />
             <div className={styles.landing}>
                 <div class="welcome">

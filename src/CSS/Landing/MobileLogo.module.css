@@ -1,0 +1,32 @@
+.logo {
+  margin: 1rem 0.5rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Poiret One", arial, sans-serif;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.header {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.subHeader {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+.span {
+  display: block;
+  width: 40%;
+  height: 0.2rem;
+  background-color: var(--main-red);
+  margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .logo {
+      display: block;
+  }
+}
