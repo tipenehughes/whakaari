@@ -12,7 +12,7 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.links}>
-                {navigationLinks.map((links) => {
+                {navigationLinks.map((links, i) => {
                     return (
                         <a
                             onClick={(e) => {
@@ -20,6 +20,7 @@ const Footer = () => {
                             }}
                             href={`#${links}`}
                             aria-label={`${links} section`}
+                            key={i}
                         >
                             {links.toUpperCase()}
                         </a>

@@ -19,7 +19,7 @@ const Landing = () => {
             {window.innerWidth < 480 && <MobileLogo />}
             <Background />
             <div className={styles.landing}>
-                <div class="welcome">
+                <div className="welcome">
                     <h2 className={styles.landingHeader}>Kia Ora!</h2>
                     <h3 className={styles.landingSubHeader}>
                         From Aotearoa/New Zealand,

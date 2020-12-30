@@ -74,6 +74,7 @@ const MobileNav = ({
                                     onClick={(e) => {
                                         scrollTo(e, links);
                                     }}
+                                    key={index}
                                 >
                                     <a href={`#${links}`}>
                                         {links.toUpperCase()}

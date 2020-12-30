@@ -1,7 +1,6 @@
 import React from "react";
-import VideoBreak from "./Upcoming Tours/VideoBreak";
 
-const Section = ({ data, input }) => {
+const Section = ({ data }) => {
     const setRoute = (d) => {
         const routeName = d.heading.split(" ")[0];
         return routeName.toLowerCase();

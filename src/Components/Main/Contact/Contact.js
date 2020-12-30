@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
     return (
-        <section class={`section ${styles.contact}`} id="contact">
+        <section className={`section ${styles.contact}`} id="contact">
             <ContactForm />
             <ContactDescription />
         </section>
