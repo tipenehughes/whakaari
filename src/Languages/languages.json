@@ -1,0 +1,415 @@
+{
+  "EN": {
+    "navigation": {
+      "about": "about",
+      "tour": "tour",
+      "gallery": "gallery",
+      "contact": "contact"
+    },
+    "landing": {
+      "header": "Kia Ora!",
+      "subheader": {
+        "one": "From Aotearoa/New Zealand",
+        "two": "to the World."
+      },
+      "button": "Upcoming Tour"
+    },
+    "about": {
+      "header": "About Us",
+      "subheader": "Bringing Māori Soul to the Heart of Europe",
+      "text": {
+        "one": "Whakaari Rotorua are a group of performers from Rotorua, New Zealand, who travel around the world sharing their Māori culture through traditional song and dance.",
+        "two": "They specifically travel to the Czech Republic often as they have a deep connection to this country – especially group leader Frank Grapl Junior, as his father, František Grapl, emigrated to New Zealand in 1950."
+      },
+      "button": "Book an event"
+    },
+    "tours": {
+      "header": "Upcoming Tour Dates",
+      "card": {
+        "one": {
+          "day": "Fri",
+          "date": "12",
+          "month": "NOVEMBER",
+          "venue": "Národní divadlo",
+          "city": "PRAGUE",
+          "flag": "../../../Assets/img/flags/austria.svg",
+          "button": "More Info"
+      },
+        "two": {
+          "day": "Tues",
+          "date": "16",
+          "month": "NOVEMBER",
+          "venue": "Puma Place",
+          "city": "PRAGUE",
+          "flag": "../../../Assets/img/flags/austria.svg",
+          "button": "More Info"
+      },
+        "three" :{
+        "day": "Thurs",
+        "date": "18",
+        "month": "NOVEMBER",
+        "venue": "Grandhotel Pupp",
+        "city": "KARLOVY VARY",
+        "flag": "../../../Assets/img/flags/austria.svg",
+        "button": "More Info"
+    },
+    "four":{
+      "day": "Sat",
+      "date": "20",
+      "month": "NOVEMBER",
+      "venue": "Wiener Staatsoper",
+      "city": "VIENNA",
+      "flag": "../../../Assets/img/flags/austria.svg",
+      "button": "More Info"
+  },
+  "five":{
+    "day": "Sun",
+    "date": "21",
+    "month": "NOVEMBER",
+    "venue": "Grosses Festipielhaus",
+    "city": "SALZBURG",
+    "flag": "../../../Assets/img/flags/austria.svg",
+    "button": "More Info"
+},
+"six":{
+  "day": "Tues",
+  "date": "22",
+  "month": "NOVEMBER",
+  "venue": "Staatstoper Berlin",
+  "city": "BERLIN",
+  "flag": "../../../Assets/img/flags/austria.svg",
+  "button": "More Info"
+}
+      },
+      "earlier": "Earlier",
+      "later": "Later"
+    },
+    "gallery": {
+      "header": "Gallery",
+      "subheader": "See some of our recent highlights",
+      "button": "Book an event"
+    },
+    "contact": {
+      "header": "Contact Us",
+      "text": {
+        "one": "To contact us about an event booking, to find out more about what we do, or just to say Kia Ora! - please fill out and submit the form below or visit any of our social media pages to send us a message.",
+        "two": "We look forward to hearing from you!"
+      },
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Submit"
+    },
+    "sponsor": "Proud partners of"
+  },
+  "CZ": {
+    "navigation": {
+      "about": "O NÁS",
+      "tour": "TURNÉ",
+      "gallery": "GALERIE",
+      "contact": "KONTAKT"
+    },
+    "landing": {
+      "header": "Kia Ora!",
+      "subheader": {
+        "one": "Z Aotearoa/Nového Zélandu,",
+        "two": "do Světa."
+      },
+      "button": "Nadcházející Turné"
+    },
+    "about": {
+      "header": "O nás",
+      "subheader": "Přináší Duši Māori Do Srdce Evropy",
+      "text": {
+        "one": "Whakaari Rotorua je skupina umělců z Rotorua na Novém Zélandu, kteří cestují po celém světě a sdílejí svou maorskou kulturu prostřednictvím tradičních písní a tanců. ",
+        "two": "Konkrétně cestují do České republiky často, protože mají k této zemi hluboké vazby - zejména vůdce skupiny Frank Grapl Junior, protože jeho otec František Grapl emigroval v roce 1950 na Nový Zéland."
+      },
+      "button": "rezervovat výstava"
+    },
+    "tours": {
+      "header": "nadcházející termíny turné",
+      "card": {
+        "one": {
+          "day": "Fri",
+          "date": "12",
+          "month": "LISTOPAD",
+          "venue": "Národní divadlo",
+          "city": "PRAHA",
+          "flag": "czech",
+          "button": "více informací"
+
+      },
+        "two": {
+          "day": "Tues",
+          "date": "16",
+          "month": "LISTOPAD",
+          "venue": "Puma Place",
+          "city": "PRAHA",
+          "flag": "czech",
+          "button": "více informací"
+      },
+        "three" :{
+        "day": "Thurs",
+        "date": "18",
+        "month": "LISTOPAD",
+        "venue": "Grandhotel Pupp",
+        "city": "KARLOVY VARY",
+        "flag": "czech",
+        "button": "více informací"
+    },
+    "four":{
+      "day": "Sat",
+      "date": "20",
+      "month": "LISTOPAD",
+      "venue": "Wiener Staatsoper",
+      "city": "Vídeň",
+      "flag": "austria",
+      "button": "více informací"
+  },
+  "five":{
+    "day": "Sun",
+    "date": "21",
+    "month": "LISTOPAD",
+    "venue": "Grosses Festipielhaus",
+    "city": "SALZBURG",
+    "flag": "austria",
+    "button": "více informací"
+},
+"six":{
+  "day": "Tues",
+  "date": "22",
+  "month": "LISTOPAD",
+  "venue": "Staatstoper Berlin",
+  "city": "Berlín",
+  "flag": "german",
+  "button": "více informací"
+}
+      },
+      "earlier": "dříve",
+      "later": "později"
+    },
+    "gallery": {
+      "header": "GALERIE",
+      "subheader": "Podívejte se na některé z našich nejnovějších vrcholů",
+      "button": "rezervovat výstava"
+    },
+    "contact": {
+      "header": "Kontaktujte Nás",
+      "text": {
+        "one": "Chcete-li nás kontaktovat ohledně rezervace události, zjistit více o tom, co děláme, nebo jen říct Kia Ora! - prosím, vyplňte a odešlete níže uvedený formulář nebo navštivte některou z našich stránek sociálních médií a pošlete nám zprávu.",
+        "two": "Těšíme se na setkání s Vámi!"
+      },
+      "name": "Název",
+      "email": "E-mailem",
+      "message": "Zpráva",
+      "submit": "Odeslat"
+    },
+    "sponsor": "Hrdí partneři společnosti"
+  },
+"DE": {
+  "navigation": {
+    "about": "Über",
+    "tour": "Tour",
+    "gallery": "Galerie",
+    "contact": "Kontakt"
+  },
+  "landing": {
+    "header": "Kia Ora!",
+    "subheader": {
+      "one": "Von Aotearoa/Neuseeland",
+      "two": "in die Welt."
+    },
+    "button": "Kommende Tour"
+  },
+  "about": {
+    "header": "Über uns",
+    "subheader": "Māori-Seele ins Herz Europas bringen",
+    "text": {
+      "one": "Whakaari Rotorua ist eine Gruppe von Künstlern aus Rotorua, Neuseeland, die um die Welt reisen und ihre Māori-Kultur durch traditionelles Lied und Tanz teilen.",
+      "two": "Sie reisen speziell oft in die Tschechische Republik, da sie eine tiefe Verbindung zu diesem Land haben - insbesondere Gruppenleiter Frank Grapl Junior, als sein Vater, František Grapl, 1950 nach Neuseeland auswanderte."
+    },
+    "button": "Veranstaltung buchen"
+  },
+  "tours": {
+    "header": "Kommende Tourdaten",
+    "card": {
+      "one": {
+        "day": "Fr",
+        "date": "12",
+        "month": "NOVEMBER",
+        "venue": "Národní divadlo",
+        "city": "Prag",
+        "flag": "czech",
+        "button": "Mehr Info"
+    },
+      "two": {
+        "day": "Di",
+        "date": "16",
+        "month": "NOVEMBER",
+        "venue": "Puma Place",
+        "city": "Prag",
+        "flag": "czech",
+        "button": "Mehr Info"
+    },
+      "three" :{
+      "day": "Do",
+      "date": "18",
+      "month": "NOVEMBER",
+      "venue": "Grandhotel Pupp",
+      "city": "karlovy variieren",
+      "flag": "czech",
+      "button": "Mehr Info"
+  },
+  "four":{
+    "day": "Sa",
+    "date": "20",
+    "month": "NOVEMBER",
+    "venue": "Wiener Staatsoper",
+    "city": "Wien",
+    "flag": "austria",
+    "button": "Mehr Info"
+},
+"five":{
+  "day": "So",
+  "date": "21",
+  "month": "NOVEMBER",
+  "venue": "Grosses Festipielhaus",
+  "city": "Salzburg",
+  "flag": "austria",
+  "button": "Mehr Info"
+},
+"six":{
+"day": "Di",
+"date": "22",
+"month": "NOVEMBER",
+"venue": "Staatstoper Berlin",
+"city": "Berlin",
+"flag": "german",
+"button": "Mehr Info"
+}
+    },
+    "earlier": "Bisherige",
+    "later": "Nächster"
+  },
+  "gallery": {
+    "header": "Galerie",
+    "subheader": "Sehen Sie einige unserer jüngsten highlights",
+    "button": "Veranstaltung buchen"
+  },
+  "contact": {
+    "header": "KONTAKTIERE UNS",
+    "text": {
+      "one": "Um uns wegen einer Eventbuchung zu kontaktieren, mehr über unsere Aktivitäten zu erfahren oder einfach nur Kia Ora zu sagen! - Bitte füllen Sie das folgende Formular aus und senden Sie es ab oder besuchen Sie eine unserer Social-Media-Seiten, um uns eine Nachricht zu senden.",
+      "two": "Wir freuen uns von Ihnen zu hören!"
+    },
+    "name": "Name",
+    "email": "Email",
+    "message": "Nachricht",
+    "submit": "Einreichen"
+  },
+  "sponsor": "Stolzer Partner von"
+},
+"PL":{
+  "navigation": {
+    "about": "o nas",
+    "tour": "tournee",
+    "gallery": "Galeria",
+    "contact": "kontakt"
+  },
+  "landing": {
+    "header": "Kia Ora!",
+    "subheader": {
+      "one": "Z Aotearoa/Nowej Zelandii",
+      "two": "na Świat."
+    },
+    "button": "Nadchodzące programy"
+  },
+  "about": {
+    "header": "o nas",
+    "subheader": "Przenoszenie duszy Maorysów do serca Europy",
+    "text": {
+      "one": "Whakaari Rotorua to grupa wykonawców z Rotorua w Nowej Zelandii, którzy podróżują po całym świecie, dzieląc się swoją kulturą Maorysów poprzez tradycyjne pieśni i tańce.",
+      "two": "Szczególnie często podróżują do Czech, ponieważ mają głębokie powiązania z tym krajem - szczególnie lider grupy Frank Grapl Junior, ponieważ jego ojciec, František Grapl, wyemigrował do Nowej Zelandii w 1950 roku."
+    },
+    "button": "Zarezerwuj wydarzenie"
+  },
+  "tours": {
+    "header": "Nadchodzące programy",
+    "card": {
+      "one": {
+        "day": "Fri",
+        "date": "12",
+        "month": "LISTOPAD",
+        "venue": "Národní divadlo",
+        "city": "Praga",
+        "flag": "czech",
+        "button": "Więcej Informacji"
+    },
+      "two": {
+        "day": "Tues",
+        "date": "16",
+        "month": "LISTOPAD",
+        "venue": "Puma Place",
+        "city": "Praga",
+        "flag": "czech",
+        "button": "Więcej Informacji"
+    },
+      "three" :{
+      "day": "Thurs",
+      "date": "18",
+      "month": "LISTOPAD",
+      "venue": "Grandhotel Pupp",
+      "city": "KARLOVY VARY",
+      "flag": "czech",
+      "button": "Więcej Informacji"
+  },
+  "four":{
+    "day": "Sat",
+    "date": "20",
+    "month": "LISTOPAD",
+    "venue": "Wiener Staatsoper",
+    "city": "Wiedeń",
+    "flag": "austria",
+    "button": "Więcej Informacji"
+},
+"five":{
+  "day": "Sun",
+  "date": "21",
+  "month": "LISTOPAD",
+  "venue": "Grosses Festipielhaus",
+  "city": "SALZBURG",
+  "flag": "austria",
+  "button": "Więcej Informacji"
+},
+"six":{
+"day": "Tues",
+"date": "22",
+"month": "LISTOPAD",
+"venue": "Staatstoper Berlin",
+"city": "BERLIN",
+"flag": "german",
+"button": "Więcej Informacji"
+}
+    },
+    "earlier": "Uprzedni",
+    "later": "Potem"
+  },
+  "gallery": {
+    "header": "Galeria",
+    "subheader": "Zobacz niektóre z naszych ostatnich najważniejszych wydarzeń",
+    "button": "Zarezerwuj wydarzenie"
+  },
+  "contact": {
+    "header": "Kontakt z nami",
+    "text": {
+      "one": "Aby skontaktować się z nami w sprawie rezerwacji wydarzenia, dowiedzieć się więcej o tym, co robimy lub po prostu powiedzieć Kia Ora! - wypełnij i prześlij poniższy formularz lub odwiedź jedną z naszych stron w mediach społecznościowych, aby wysłać nam wiadomość.",
+      "two": "Oczekujemy na kontakt zwrotny!"
+    },
+    "name": "Nazwa",
+    "email": "Email",
+    "message": "Wiadomość",
+    "submit": "Wysłać"
+  },
+  "sponsor": "Dumni partnerzy"
+}
+}

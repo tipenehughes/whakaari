@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../../CSS/Main/Upcoming/UpcomingTour.module.css";
 
 const TourCards = ({ data, count, index }) => {
+
     return (
         <div
             className={`${styles.card} ${
@@ -21,12 +22,12 @@ const TourCards = ({ data, count, index }) => {
                     <h4>{data.city}</h4>
                 </div>
                 <div className={styles.flag}>
-                    <img src={data.flag} alt="" />
+                    <img src="" alt="" />
                 </div>
             </div>
             <div className={styles.tourDescription}></div>
             <div className={styles.tourButton}>
-                <button className="button">More Info</button>
+                <button className="button">{data.button}</button>
             </div>
         </div>
     );

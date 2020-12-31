@@ -7,6 +7,7 @@
     font-family: "Poiret One", arial, sans-serif;
     text-align: center;
     line-height: 1;
+    user-select: none;
 }
 
 .logo {

@@ -1,35 +1,30 @@
 import React from "react";
-import styles from "../../../CSS/Main/About/About.module.css";
 import img from "../../../Assets/img/about.jpg";
+import language from "../../../Languages/languages.json";
+import styles from "../../../CSS/Main/About/About.module.css";
 
-const About = () => {
+const About = ({ lang }) => {
     const scrollToContact = () => {
-        const aboutSection = document.getElementById("contact");
+        const aboutSection = document.getElementById(
+            language[lang].navigation.contact
+        );
         aboutSection.scrollIntoView();
     };
     return (
-        <section className={`section ${styles.about}`} id="about">
+        <section
+            className={`section ${styles.about}`}
+            id={language[lang].navigation.about}
+        >
             <div className={`flexItem ${styles.imageFlexItem}`}>
                 <img className={styles.image} src={img} alt="" />
             </div>
             <div className="description flexItem">
-                <h2 className="header">About us</h2>
-                <h3 className="subHeader">
-                    Bringing Māori Soul to the Heart of Europe
-                </h3>
-                <p className="text">
-                    Whakaari Rotorua are a group of performers from Rotorua, New
-                    Zealand, who travel around the world sharing their Māori
-                    culture through traditional song and dance.
-                </p>
-                <p className="text">
-                    They specifically travel to the Czech Republic often as they
-                    have a deep connection to this country – especially group
-                    leader Frank Grapl Junior, as his father, František Grapl,
-                    emigrated to New Zealand in 1950.
-                </p>
+                <h2 className="header">{language[lang].about.header}</h2>
+                <h3 className="subHeader">{language[lang].about.subheader}</h3>
+                <p className="text">{language[lang].about.text.one}</p>
+                <p className="text">{language[lang].about.text.two}</p>
                 <button className="button" onClick={scrollToContact}>
-                    Book an event
+                    {language[lang].about.button}
                 </button>
             </div>
         </section>

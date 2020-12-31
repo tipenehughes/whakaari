@@ -1,4 +1,5 @@
 import React from "react";
+import language from "../../../Languages/languages.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faFacebookSquare,
@@ -7,17 +8,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import styles from "../../../CSS/Main/Contact/Contact.module.css";
 
-const ContactDescription = () => {
+const ContactDescription = ({ lang }) => {
     return (
         <div className="description flexItem">
-            <h2 className="header">Contact Us</h2>
-            <p className="text">
-                To contact us about an event booking, to find out more about
-                what we do, or just to say Kia Ora! - please fill out and submit
-                the form below or visit any of our social media pages to send us
-                a message.
-            </p>
-            <p className="text">We look forward to hearing from you!</p>
+            <h2 className="header">{language[lang].contact.header}</h2>
+            <p className="text">{language[lang].contact.text.one}</p>
+            <p className="text">{language[lang].contact.text.two}</p>
             <div className={styles.socialIcons}>
                 <a
                     href="https://www.facebook.com/WhakaariRotorua/"

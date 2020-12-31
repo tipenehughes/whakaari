@@ -7,15 +7,15 @@ import Gallery from "./Gallery/Gallery";
 import UpcomingTour from "./Upcoming Tours/UpcomingTour";
 import Contact from "./Contact/Contact";
 
-const Main = () => {
+const Main = ({lang}) => {
     return (
         <main>
-            <Landing />
-            <About />
-            <VideoBreak />
-            <UpcomingTour />
-            <Gallery />
-            <Contact />
+            <Landing lang={lang}/>
+            <About lang={lang}/>
+            <VideoBreak lang={lang}/>
+            <UpcomingTour lang={lang}/>
+            <Gallery lang={lang}/>
+            <Contact lang={lang}/>
         </main>
     );
 };

@@ -6,7 +6,7 @@ import polish from "../../../Assets/img/flags/polish.svg";
 import german from "../../../Assets/img/flags/german.svg";
 import styles from "../../../CSS/Navigation/Languages.module.css";
 
-const Languages = () => {
+const Languages = ({ handleSetLanguage }) => {
     const [selection, setSelection] = useState({
         lang: english,
         code: "EN",
@@ -47,11 +47,12 @@ const Languages = () => {
                     </a>
                 </div>
                 {hover && (
-                    <LangDropDown
+                    <LangDropDown                        
                         hover={hover}
                         langs={langs}
                         selection={selection}
                         handleSetSelection={handleSetSelection}
+                        handleSetLanguage={handleSetLanguage}
                     />
                 )}
             </div>

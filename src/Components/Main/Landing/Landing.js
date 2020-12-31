@@ -3,15 +3,20 @@ import MobileLogo from "./MobileLogo";
 import Background from "./Background";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import language from "../../../Languages/languages.json";
 import styles from "../../../CSS/Landing/Landing.module.css";
 
-const Landing = () => {
+const Landing = ({ lang }) => {
     const scrollToAbout = () => {
-        const aboutSection = document.getElementById("about");
+        const aboutSection = document.getElementById(
+            language[lang].navigation.about
+        );
         aboutSection.scrollIntoView();
     };
     const scrollToTours = () => {
-        const tourSection = document.getElementById("tour");
+        const tourSection = document.getElementById(
+            language[lang].navigation.tour
+        );
         tourSection.scrollIntoView();
     };
     return (
@@ -20,18 +25,20 @@ const Landing = () => {
             <Background />
             <div className={styles.landing}>
                 <div className="welcome">
-                    <h2 className={styles.landingHeader}>Kia Ora!</h2>
+                    <h2 className={styles.landingHeader}>
+                        {language[lang].landing.header}
+                    </h2>
                     <h3 className={styles.landingSubHeader}>
-                        From Aotearoa/New Zealand,
+                        {language[lang].landing.subheader.one}
                         <br />
-                        to the World.
+                        {language[lang].landing.subheader.two}
                     </h3>
                 </div>
                 <button
                     className={styles.landingButton}
                     onClick={scrollToTours}
                 >
-                    Upcoming Tour
+                    {language[lang].landing.button}
                 </button>
             </div>
             <div className={styles.scrollDown}>

@@ -87,11 +87,13 @@
 .arrowContainer p:first-of-type {
     font-size: 1.75rem;
     margin-left: 2rem;
+    user-select: none;
 }
 
 .arrowContainer p:last-of-type {
     font-size: 1.75rem;
     margin-right: 2rem;
+    user-select: none;
 }
 
 .dateDetails {
@@ -128,10 +130,12 @@
 
 .location h4 {
     font-size: 2rem;
+    text-transform: uppercase;
 }
 
 .location h4:first-of-type {
     font-weight: 400;
+    text-transform: capitalize;
 }
 
 .flex-location {

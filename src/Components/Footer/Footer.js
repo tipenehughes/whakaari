@@ -1,9 +1,15 @@
 import React from "react";
 import sponsor from "../../Assets/img/sponsor.png";
+import language from "../../Languages/languages.json";
 import styles from "../../CSS/Footer/Footer.module.css";
 
-const Footer = () => {
-    const navigationLinks = ["about", "tour", "gallery", "contact"];
+const Footer = ({ lang }) => {
+    const navigationLinks = [
+        language[lang].navigation.about,
+        language[lang].navigation.tour,
+        language[lang].navigation.gallery,
+        language[lang].navigation.contact,
+    ];
     const scrollTo = (e, link) => {
         e.preventDefault();
         const aboutSection = document.getElementById(link);
@@ -28,7 +34,7 @@ const Footer = () => {
                 })}
             </div>
             <div className={styles.sponsor}>
-                <p>Proud partners of</p>
+                <p>{language[lang].sponsor}</p>
                 <a
                     className={styles.sponsorImage}
                     href="https://www.aotearoa.cz/"

@@ -3,9 +3,11 @@ import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import Languages from "./LangNav/Languages";
 import MobileNav from "./MobileNav";
+
+import language from "../../Languages/languages.json";
 import styles from "../../CSS/Navigation/NavBar.module.css";
 
-const NavBar = () => {
+const NavBar = ({ handleSetLanguage, lang }) => {
     const [navScroll, setNavScroll] = useState("");
     const [mobileMenu, setMobileMenu] = useState(false);
     const [width, setWidth] = useState(window.innerWidth);
@@ -40,7 +42,12 @@ const NavBar = () => {
         scrollFunction();
     };
 
-    const navigationLinks = ["about", "tour", "gallery", "contact"];
+    const navigationLinks = [
+        language[lang].navigation.about,
+        language[lang].navigation.tour,
+        language[lang].navigation.gallery,
+        language[lang].navigation.contact,
+    ];
 
     return (
         <>
@@ -53,13 +60,14 @@ const NavBar = () => {
                     navigationLinks={navigationLinks}
                     scroll={navScroll}
                 />
-                <Languages />
+                <Languages handleSetLanguage={handleSetLanguage} />
             </nav>
             <MobileNav
                 handleSetMobileMenu={handleSetMobileMenu}
                 menuOpen={mobileMenu}
                 width={width}
                 navigationLinks={navigationLinks}
+                handleSetLanguage={handleSetLanguage}
             />
         </>
     );

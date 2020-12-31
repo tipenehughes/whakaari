@@ -14,6 +14,7 @@ import styles from "../../CSS/Navigation/MobileNav.module.css";
 
 const MobileNav = ({
     handleSetMobileMenu,
+    handleSetLanguage,
     menuOpen,
     width,
     navigationLinks,
@@ -84,17 +85,37 @@ const MobileNav = ({
                         })}
                     </ul>
                     <ul className={styles.flagsContainer}>
-                        <li>
-                            <img src={english} alt="" className={styles.flag} />
+                        <li onClick={handleSetLanguage}>
+                            <img
+                                src={english}
+                                data-code="EN"
+                                alt=""
+                                className={styles.flag}
+                            />
                         </li>
-                        <li>
-                            <img src={czech} alt="" className={styles.flag} />
+                        <li onClick={handleSetLanguage}>
+                            <img
+                                src={czech}
+                                data-code="CZ"
+                                alt=""
+                                className={styles.flag}
+                            />
                         </li>
-                        <li>
-                            <img src={german} alt="" className={styles.flag} />
+                        <li onClick={handleSetLanguage}>
+                            <img
+                                src={german}
+                                data-code="DE"
+                                alt=""
+                                className={styles.flag}
+                            />
                         </li>
-                        <li>
-                            <img src={polish} alt="" className={styles.flag} />
+                        <li onClick={handleSetLanguage}>
+                            <img
+                                src={polish}
+                                data-code="PL"
+                                alt=""
+                                className={styles.flag}
+                            />
                         </li>
                     </ul>
                 </motion.div>

@@ -1,7 +1,13 @@
 import React from "react";
 import styles from "../../../CSS/Navigation/Languages.module.css";
 
-const LangDropDown = ({ hover, selection, langs, handleSetSelection }) => {
+const LangDropDown = ({
+    hover,
+    selection,
+    langs,
+    handleSetSelection,
+    handleSetLanguage,
+}) => {
     const removeSelection = (arr) => {
         const index = arr.findIndex((v) => v.lang === selection.lang);
         if (index > -1) {
@@ -25,7 +31,10 @@ const LangDropDown = ({ hover, selection, langs, handleSetSelection }) => {
                             aria-label="Language selector"
                             data-lang={lang.lang}
                             data-code={lang.code}
-                            onClick={handleSetSelection}
+                            onClick={(event) => {
+                                handleSetSelection(event);
+                                handleSetLanguage(event);
+                            }}
                         >
                             <a class={styles.langActive} href="#placeholder">
                                 <img src={lang.lang} id="en" alt="English" />

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import Carousel from "./Carousel";
 
+import language from "../../../Languages/languages.json";
+
 import img1 from "../../../Assets/img/gallery/1.jpg";
 import img2 from "../../../Assets/img/gallery/2.jpg";
 import img3 from "../../../Assets/img/gallery/3.png";
@@ -12,7 +14,7 @@ import img7 from "../../../Assets/img/gallery/7.png";
 
 import styles from "../../../CSS/Main/Gallery/Gallery.module.css";
 
-const Gallery = () => {
+const Gallery = ({ lang }) => {
     const [carouselImage, setCarouselImage] = useState(0);
 
     const handleSetCarouselImageUp = () => {
@@ -27,7 +29,9 @@ const Gallery = () => {
     };
     // Scroll trigger for button
     const scrollToContact = () => {
-        const aboutSection = document.getElementById("contact");
+        const aboutSection = document.getElementById(
+            language[lang].navigation.contact
+        );
         aboutSection.scrollIntoView();
     };
 
@@ -35,12 +39,19 @@ const Gallery = () => {
     const images = [img1, img2, img3, img4, img5, img6, img7];
 
     return (
-        <section className={`section ${styles.gallery}`} id="gallery">
+        <section
+            className={`section ${styles.gallery}`}
+            id={language[lang].navigation.gallery}
+        >
             <div className={`description ${styles.flexItem}`}>
-                <h2 className={`header ${styles.header}`}>Gallery</h2>
-                <h3 className="subHeader">See some of our recent highlights</h3>
+                <h2 className={`header ${styles.header}`}>
+                    {language[lang].gallery.header}
+                </h2>
+                <h3 className="subHeader">
+                    {language[lang].gallery.subheader}
+                </h3>
                 <button className="button" onClick={scrollToContact}>
-                    Book an event
+                    {language[lang].gallery.button}
                 </button>
             </div>
             <Carousel
