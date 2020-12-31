@@ -29,7 +29,7 @@ const Background = () => {
         exit: {
             opacity: 0,
             transition: {
-                duration: 0.5,
+                duration: 3,
                 type: "ease",
             },
         },
@@ -38,20 +38,27 @@ const Background = () => {
     const bgImg = [bg1, bg2, bg3];
 
     // Function for landing background image slideshow
-    let count = 0;
-    
+    const counter = () => {
+        setTimeout(() => {
+            return bg < bgImg.length - 1 ? setBg(bg + 1) : setBg(0);
+        }, 5000);
+    };
+    useEffect(() => {
+        counter();
+    }, [bg]);
 
     return (
         <div className={styles.background}>
             <AnimatePresence>
                 <motion.img
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
+                    variants={variants}
+                    initial="hidden"
+                    animate="visible"
+                    exit="exit"
                     className={styles.backgroundImage}
-                    src={bgImg[count]}
+                    src={bgImg[bg]}
                     alt="#"
-                    key={bgImg[count]}
+                    key={bgImg[bg]}
                 />
             </AnimatePresence>
         </div>

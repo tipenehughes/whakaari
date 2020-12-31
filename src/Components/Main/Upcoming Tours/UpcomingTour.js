@@ -8,7 +8,15 @@ import german from "../../../Assets/img/flags/german.svg";
 import styles from "../../../CSS/Main/Upcoming/UpcomingTour.module.css";
 
 const UpcomingTour = () => {
-    const [cardPlacement, setCardPlacement] = useState([0, 1, 2]);
+    const [translate, setTranslate] = useState([75, 45, 15, -15, -45, -75]);
+    const [count, setCount] = useState(0);
+
+    const handleSetCountUp = () => {
+        return count < 5 ? setCount(count + 1) : null;
+    };
+    const handleSetCountDown = () => {
+        return count > 0 ? setCount(count - 1) : null;
+    };
 
     const cards = [
         {
@@ -61,31 +69,23 @@ const UpcomingTour = () => {
         },
     ];
 
-    const handleSetCardPlacementNext = () => {
-        const increase = cardPlacement.map((n) => n + 1);
-        return cardPlacement[2] < cards.length - 1
-            ? setCardPlacement(increase)
-            : null;
-    };
-    const handleSetCardPlacementPrev = () => {
-        const decrease = cardPlacement.map((n) => n - 1);
-        return cardPlacement[0] <= 0 ? null : setCardPlacement(decrease);
-    };
-
     return (
         <section className={`section ${styles.tour}`} id="tour">
             <div className={styles.tourHeader}>
                 <h2 className="header">Upcoming Tour Dates</h2>
             </div>
-            <div className={styles.tourCards}>
-                <TourCards data={cards[cardPlacement[0]]} />
-                <TourCards data={cards[cardPlacement[1]]} />
-                <TourCards data={cards[cardPlacement[2]]} />
+            <div
+                className={styles.tourCards}
+                style={{ transform: `translateX(${translate[count]}vw)` }}
+            >
+                {cards.map((card, i) => {
+                    return <TourCards data={card} key={i} count={count} index={i} />;
+                })}
             </div>
             <div className={styles.tourArrows}>
                 <div
                     className={styles.arrowContainer}
-                    onClick={() => handleSetCardPlacementPrev()}
+                    onClick={handleSetCountDown}
                 >
                     <FontAwesomeIcon
                         className={styles.arrowLeft}
@@ -95,7 +95,7 @@ const UpcomingTour = () => {
                 </div>
                 <div
                     className={styles.arrowContainer}
-                    onClick={() => handleSetCardPlacementNext()}
+                    onClick={handleSetCountUp}
                 >
                     <p>Later</p>
                     <FontAwesomeIcon

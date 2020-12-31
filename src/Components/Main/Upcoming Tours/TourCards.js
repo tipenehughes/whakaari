@@ -1,9 +1,13 @@
 import React from "react";
 import styles from "../../../CSS/Main/Upcoming/UpcomingTour.module.css";
 
-const TourCards = ({ data }) => {
+const TourCards = ({ data, count, index }) => {
     return (
-        <div className={styles.card}>
+        <div
+            className={`${styles.card} ${
+                count === index ? styles.cardActive : null
+            }`}
+        >
             <div className={styles.dateDetails}>
                 <h3>{data.date}</h3>
                 <div className={styles.dayMonth}>
