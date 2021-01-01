@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../../../CSS/Main/Upcoming/UpcomingTour.module.css";
 
 const TourCards = ({ data, count, index }) => {
-
     return (
         <div
             className={`${styles.card} ${
@@ -22,7 +21,13 @@ const TourCards = ({ data, count, index }) => {
                     <h4>{data.city}</h4>
                 </div>
                 <div className={styles.flag}>
-                    <img src="" alt="" />
+                    <img
+                        src={
+                            require(`../../../Assets/img/flags/${data.flag}.svg`)
+                                .default
+                        }
+                        alt={`${data.flag} flag`}
+                    />
                 </div>
             </div>
             <div className={styles.tourDescription}></div>

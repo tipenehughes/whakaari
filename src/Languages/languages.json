@@ -32,7 +32,7 @@
           "month": "NOVEMBER",
           "venue": "Národní divadlo",
           "city": "PRAGUE",
-          "flag": "../../../Assets/img/flags/austria.svg",
+          "flag": "czech",
           "button": "More Info"
       },
         "two": {
@@ -41,7 +41,7 @@
           "month": "NOVEMBER",
           "venue": "Puma Place",
           "city": "PRAGUE",
-          "flag": "../../../Assets/img/flags/austria.svg",
+          "flag": "czech",
           "button": "More Info"
       },
         "three" :{
@@ -50,7 +50,7 @@
         "month": "NOVEMBER",
         "venue": "Grandhotel Pupp",
         "city": "KARLOVY VARY",
-        "flag": "../../../Assets/img/flags/austria.svg",
+        "flag": "czech",
         "button": "More Info"
     },
     "four":{
@@ -59,7 +59,7 @@
       "month": "NOVEMBER",
       "venue": "Wiener Staatsoper",
       "city": "VIENNA",
-      "flag": "../../../Assets/img/flags/austria.svg",
+      "flag": "austria",
       "button": "More Info"
   },
   "five":{
@@ -68,7 +68,7 @@
     "month": "NOVEMBER",
     "venue": "Grosses Festipielhaus",
     "city": "SALZBURG",
-    "flag": "../../../Assets/img/flags/austria.svg",
+    "flag": "austria",
     "button": "More Info"
 },
 "six":{
@@ -77,7 +77,7 @@
   "month": "NOVEMBER",
   "venue": "Staatstoper Berlin",
   "city": "BERLIN",
-  "flag": "../../../Assets/img/flags/austria.svg",
+  "flag": "german",
   "button": "More Info"
 }
       },
