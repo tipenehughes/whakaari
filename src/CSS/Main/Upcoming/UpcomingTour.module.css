@@ -167,24 +167,22 @@
 
 @media only screen and (max-width: 1025px) {
     .tourCards {
-        width: 150%;
         flex: 1 1 50%;
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .tourCards {
-        width: 100%;
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 50vw;
     }
+}
+
+@media only screen and (max-width: 480px) {
     .tourHeader h2 {
         text-align: center;
     }
     .card {
-        width: 90%;
+        width: 90vw;
         margin: auto;
-    }
-    .card:first-of-type,
-    .card:last-of-type {
-        display: none;
     }
 }
