@@ -44,12 +44,16 @@ a {
 }
 
 .section {
-    height: 120vh;
+    min-height: 120vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5%;
+}
+
+main section:nth-of-type(4) {
+    height: 120vh;
 }
 
 .flexItem {
@@ -84,6 +88,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin: 0;
 }
 
 .button {
@@ -122,7 +127,7 @@ a {
 
 @media only screen and (max-width: 1025px) {
     .section {
-        height: 80vh;
+        min-height: 80vh;
         padding: 2.5%;
     }
     main section:nth-of-type(4) {
@@ -132,14 +137,18 @@ a {
 
 @media only screen and (max-width: 768px) {
     main section:nth-of-type(2) {
-        height: 50vh;
+        min-height: 50vh;
+    }
+    main section:nth-of-type(5) {
+        justify-content: space-around;
+        height: 80vh;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .section {
         flex-direction: column;
-        height: 100vh;
+        min-height: 80vh;
     }
     .flexItem {
         width: 100%;
@@ -149,6 +158,7 @@ a {
     }
 
     main section:nth-of-type(5) {
-        height: 70vh;
+        min-height: 40vh;
+        height: 60vh;
     }
 }

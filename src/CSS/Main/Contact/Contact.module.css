@@ -65,6 +65,7 @@ form {
     border-radius: inherit;
     letter-spacing: 1px;
     cursor: pointer;
+    appearance: none;
 }
 
 form .submitBtn {

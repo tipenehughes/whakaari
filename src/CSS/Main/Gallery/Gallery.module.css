@@ -1,6 +1,5 @@
 .gallery .flexItem {
-    flex: 1 1 25%;
-    height: 100%;
+    height: 30%;
     padding: 0 1rem 0 0;
 }
 
@@ -9,8 +8,12 @@
 }
 
 .carouselContainer {
-    flex: 1 1 60%;
+    height: 70%;
     width: 105%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .imageContainer {
@@ -18,7 +21,6 @@
     display: grid;
     place-items: center;
     width: 100%;
-    height: 100%;
 }
 
 .carouselImage {
@@ -28,11 +30,11 @@
 
 .arrowContainer {
     font-size: 4rem;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     height: auto;
     width: auto;
     padding: 1rem;
@@ -59,10 +61,17 @@
 @media only screen and (max-width: 768px) {
     .gallery {
         flex-direction: column;
+        justify-content: space-evenly;
     }
     .gallery .flexItem {
         width: 100%;
         padding: 2.5% 2.5% 2.5% 5%;
         flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .gallery .flexItem {
+        height: 40%;
     }
 }

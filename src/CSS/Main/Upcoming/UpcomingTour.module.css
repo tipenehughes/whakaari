@@ -12,13 +12,14 @@
     width: 100%;
 }
 
-.tourHeader .header {
+.tourHeader h2 {
     margin: 0;
 }
 
 .tourCards {
     flex: 1 1 70%;
     width: auto;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,6 +156,7 @@
 
 .tourDescription {
     flex: 1 1 60%;
+    height: 100%;
     width: 100%;
 }
 
