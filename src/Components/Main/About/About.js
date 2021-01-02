@@ -11,10 +11,7 @@ const About = ({ lang }) => {
         aboutSection.scrollIntoView();
     };
     return (
-        <section
-            className={`section ${styles.about}`}
-            id={language[lang].navigation.about}
-        >
+        <section className={"section"} id={language[lang].navigation.about}>
             <div className={`flexItem ${styles.imageFlexItem}`}>
                 <img className={styles.image} src={img} alt="" />
             </div>

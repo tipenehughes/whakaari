@@ -4,13 +4,22 @@ import Carousel from "./Carousel";
 
 import language from "../../../Languages/languages.json";
 
-import img1 from "../../../Assets/img/gallery/1.jpg";
-import img2 from "../../../Assets/img/gallery/2.jpg";
-import img3 from "../../../Assets/img/gallery/3.png";
-import img4 from "../../../Assets/img/gallery/4.jpg";
-import img5 from "../../../Assets/img/gallery/5.jpg";
-import img6 from "../../../Assets/img/gallery/6.png";
-import img7 from "../../../Assets/img/gallery/7.png";
+import img1 from "../../../Assets/img/gallery/slide1.png";
+import img2 from "../../../Assets/img/gallery/slide2.png";
+import img3 from "../../../Assets/img/gallery/slide3.png";
+import img4 from "../../../Assets/img/gallery/slide4.png";
+import img5 from "../../../Assets/img/gallery/slide5.png";
+import img6 from "../../../Assets/img/gallery/slide6.png";
+import img7 from "../../../Assets/img/gallery/slide7.png";
+import img8 from "../../../Assets/img/gallery/slide8.png";
+import img85 from "../../../Assets/img/gallery/slide8.5.png";
+import img9 from "../../../Assets/img/gallery/slide9.png";
+import img10 from "../../../Assets/img/gallery/slide10.png";
+import img11 from "../../../Assets/img/gallery/slide11.png";
+import img12 from "../../../Assets/img/gallery/slide12.png";
+import img13 from "../../../Assets/img/gallery/slide13.png";
+import img14 from "../../../Assets/img/gallery/slide14.png";
+import img15 from "../../../Assets/img/gallery/slide15.png";
 
 import styles from "../../../CSS/Main/Gallery/Gallery.module.css";
 
@@ -36,7 +45,24 @@ const Gallery = ({ lang }) => {
     };
 
     // Array of images for gallery
-    const images = [img1, img2, img3, img4, img5, img6, img7];
+    const images = [
+        img1,
+        img2,
+        img3,
+        img4,
+        img5,
+        img6,
+        img7,
+        img85,
+        img8,
+        img9,
+        img10,
+        img11,
+        img12,
+        img13,
+        img14,
+        img15,
+    ];
 
     return (
         <section

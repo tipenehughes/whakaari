@@ -8,8 +8,6 @@
     width: 100%;
     margin: auto;
 }
-@media only screen and (max-width: 768px) {
-}
 
 @media only screen and (max-width: 480px) {
     .imageFlexItem {
