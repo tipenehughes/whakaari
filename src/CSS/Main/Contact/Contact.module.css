@@ -15,41 +15,47 @@ form {
     width: 100%;
     height: auto;
     margin-top: 6rem;
-}
-.formControl {
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-.formControl:last-of-type {
-    margin-bottom: -1rem;
+    font-family: "Roboto", sans-serif;
 }
 
 .formInput {
     width: 90%;
     height: 3rem;
     padding: 0.5rem;
+    margin-top: 1.5rem;
     border: none;
     background-color: #fff;
+    border: 2px solid #fff;
     border-radius: 4px;
+    font-size: 1.3rem;
+    transition: border 0.2s ease;
+    outline: none;
 }
 
-.formInput::placeholder {
-    font-size: 1.3rem;
-    font-family: "Roboto", sans-serif;
+.formInputError {
+    border: 2px solid #ff0033;
+    transition: border 0.2s ease;
+}
+
+.formInputSuccess {
+    border: 2px solid #4bb543;
+    transition: border 0.2s ease;
 }
 
 .formTextarea {
     height: 15rem;
     padding: 0.5rem;
-    border: none;
-    border-bottom: 2px solid #b3b3b3b6;
     background-color: #f1f1f1;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    outline: none;
 }
 
-.formTextarea::placeholder {
-    font-size: 1.3rem;
-    font-family: "Roboto", sans-serif;
+form p {
+    position: absolute;
+    color: #ff0033;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .formSubmit {

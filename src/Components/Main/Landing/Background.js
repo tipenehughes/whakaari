@@ -59,9 +59,15 @@ const Background = () => {
 
     return (
         <div className={styles.background}>
-            {width <= 480 && <img className={styles.backgroundImage}></img>}
+            {width <= 480 && (
+                <img className={styles.backgroundImage} alt="background"></img>
+            )}
             {width <= 768 && (
-                <img src={tabletBg} className={styles.backgroundImage}></img>
+                <img
+                    src={tabletBg}
+                    className={styles.backgroundImage}
+                    alt="background"
+                ></img>
             )}
             {width > 768 && (
                 <AnimatePresence>

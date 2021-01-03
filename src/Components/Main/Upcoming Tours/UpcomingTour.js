@@ -12,6 +12,7 @@ import styles from "../../../CSS/Main/Upcoming/UpcomingTour.module.css";
 const UpcomingTour = ({ lang }) => {
     const [count, setCount] = useState(0);
     const [width, setWidth] = useState(window.innerWidth);
+    const [flipped, setFlipped] = useState(false);
 
     const handleSetWidth = () => {
         setWidth(window.innerWidth);
@@ -25,10 +26,16 @@ const UpcomingTour = ({ lang }) => {
     const mobile = width < 480;
 
     const handleSetCountUp = () => {
+        setFlipped(false);
         return count < 5 ? setCount(count + 1) : null;
     };
     const handleSetCountDown = () => {
+        setFlipped(false);
         return count > 0 ? setCount(count - 1) : null;
+    };
+
+    const handleSetFlipped = () => {
+        return !flipped ? setFlipped(true) : setFlipped(false);
     };
 
     const translateDesktop = [75, 45, 15, -15, -45, -75];
@@ -71,6 +78,8 @@ const UpcomingTour = ({ lang }) => {
                             key={i}
                             count={count}
                             index={i}
+                            flipped={flipped}
+                            handleSetFlipped={handleSetFlipped}
                         />
                     );
                 })}

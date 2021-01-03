@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ToastContainer } from "react-toastify";
 import NavBar from "./Components/Navigation/NavBar";
 import Main from "./Components/Main/Main";
 import Footer from "./Components/Footer/Footer";
@@ -17,6 +18,17 @@ function App() {
             <NavBar handleSetLanguage={handleSetLanguage} lang={language} />
             <Main lang={language} />
             <Footer lang={language} />
+            <ToastContainer
+                position="bottom-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         </div>
     );
 }
