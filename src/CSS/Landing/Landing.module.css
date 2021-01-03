@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     color: var(--light-font);
-    font-family: "Lato", sans-serif;    
+    font-family: "Lato", sans-serif;
 }
 
 .background {
@@ -33,27 +33,26 @@
 }
 
 .landingHeader {
-    font-size: 6rem;
+    font-size: var(--landing-header);
     line-height: 1.5;
     font-family: "Lato", sans-serif;
-    /* text-transform: uppercase; */
 }
 
 .landingSubHeader {
-    font-size: 3rem;
+    font-size: var(--landing-subheader);
     letter-spacing: 0.1rem;
     margin-bottom: 2rem;
     font-weight: 400;
 }
 
 .landingButton {
-    height: 4.5rem;
-    width: 14rem;
-    font-size: 1.2rem;
+    height: var(--button-height);
+    width: var(--button-width);
+    font-size: var(--text-size);
     text-transform: uppercase;
     font-weight: 500;
     color: #fff;
-    background-color: #a10000;
+    background-color: var(--main-red);
     border: none;
     outline: none;
     border-radius: 4px;
@@ -62,7 +61,7 @@
 }
 
 .landingButton:hover {
-    background-color: #c30000;
+    background-color: var(--light-red);
     transition: background-color 0.2s ease;
 }
 

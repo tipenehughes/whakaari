@@ -11,13 +11,13 @@ const Landing = ({ lang }) => {
         const aboutSection = document.getElementById(
             language[lang].navigation.about
         );
-        aboutSection.scrollIntoView();
+        aboutSection.scrollIntoView({ behavior: "smooth" });
     };
     const scrollToTours = () => {
         const tourSection = document.getElementById(
             language[lang].navigation.tour
         );
-        tourSection.scrollIntoView();
+        tourSection.scrollIntoView({ behavior: "smooth" });
     };
     return (
         <section className={`container ${styles.landingContainer}`}>

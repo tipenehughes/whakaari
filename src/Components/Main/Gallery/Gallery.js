@@ -41,7 +41,7 @@ const Gallery = ({ lang }) => {
         const aboutSection = document.getElementById(
             language[lang].navigation.contact
         );
-        aboutSection.scrollIntoView();
+        aboutSection.scrollIntoView({ behavior: "smooth" });
     };
 
     // Array of images for gallery

@@ -8,7 +8,7 @@ const About = ({ lang }) => {
         const aboutSection = document.getElementById(
             language[lang].navigation.contact
         );
-        aboutSection.scrollIntoView();
+        aboutSection.scrollIntoView({ behavior: "smooth" });
     };
     return (
         <section className={"section"} id={language[lang].navigation.about}>

@@ -5,7 +5,9 @@ const Logo = ({ scroll }) => {
     return (
         <header
             className={styles.logoContainer}
-            onClick={() => window.scrollTo(0, 0)}
+            onClick={() =>
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+            }
         >
             <div className={`${styles.logo} ${styles[scroll]}`}>
                 <h1 className={styles.header} id="whakaari">

@@ -13,6 +13,7 @@
 }
 
 .tourHeader h2 {
+    color: var(--header-light);
     margin: 0;
 }
 
@@ -140,10 +141,11 @@
 .dateDetails h3 {
     line-height: 1;
     font-size: 2rem;
+    color: var(--subHeader-color)
 }
 
 .dateDetails h3:nth-last-of-type(2) {
-    color: #a10000;
+    color: var(--main-red);
 }
 
 .location {

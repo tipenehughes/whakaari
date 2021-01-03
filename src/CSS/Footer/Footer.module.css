@@ -9,20 +9,11 @@
 }
 
 .links {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
-}
-
-.links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 400;
-    width: 20%;
-    text-align: center;
 }
 
 .sponsor {

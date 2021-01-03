@@ -42,7 +42,7 @@ const MobileNav = ({
     const scrollTo = (e, link) => {
         e.preventDefault();
         const aboutSection = document.getElementById(link);
-        aboutSection.scrollIntoView();
+        aboutSection.scrollIntoView({ behavior: "smooth" });
         handleSetMobileMenu();
     };
 

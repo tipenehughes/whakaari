@@ -13,7 +13,7 @@ const Footer = ({ lang }) => {
     const scrollTo = (e, link) => {
         e.preventDefault();
         const aboutSection = document.getElementById(link);
-        aboutSection.scrollIntoView();
+        aboutSection.scrollIntoView({ behavior: "smooth" });
     };
     return (
         <footer className={styles.footer}>
