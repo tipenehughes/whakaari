@@ -158,8 +158,7 @@ main section:nth-of-type(5) {
     main section:nth-of-type(2) {
         min-height: 60vh;
     }
-    main section:nth-of-type(5) {
-        justify-content: space-around;
+    main section:nth-of-type(5) {        
         height: 80vh;
     }
 }

@@ -76,5 +76,6 @@
 @media only screen and (max-width: 480px) {
     .gallery .flexItem {
         height: 40%;
+        justify-content: flex-end;
     }
 }
