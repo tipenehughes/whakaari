@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import NavBar from "./Components/Navigation/NavBar";
 import Main from "./Components/Main/Main";
@@ -8,16 +8,19 @@ import "./App.css";
 
 function App() {
     const [language, setLanguage] = useState("EN");
+    const [vh, setVh] = useState(window.innerHeight * 0.01);
 
     const handleSetLanguage = (e) => {
         return setLanguage(e.target.dataset.code);
     };
-
     // Set viewport height
+    useEffect(() => {
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+    }, [vh]);
 
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-    console.log(vh);
+    window.addEventListener("resize", () => {
+        setVh(window.innerHeight * 0.01);
+    });
 
     return (
         <div className="App">
