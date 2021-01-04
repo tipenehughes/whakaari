@@ -1,7 +1,7 @@
 import React from "react";
 import MobileLogo from "./MobileLogo";
 import Background from "./Background";
-import smoothscroll from 'smoothscroll-polyfill';
+import smoothscroll from "smoothscroll-polyfill";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import language from "../../../Languages/languages.json";
@@ -22,7 +22,7 @@ const Landing = ({ lang }) => {
         tourSection.scrollIntoView({ behavior: "smooth" });
     };
     return (
-        <section className={`container ${styles.landingContainer}`}>
+        <section className={styles.landingContainer}>
             {window.innerWidth < 480 && <MobileLogo />}
             <Background />
             <div className={styles.landing}>

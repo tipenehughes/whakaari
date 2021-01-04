@@ -13,6 +13,7 @@ function App() {
     const handleSetLanguage = (e) => {
         return setLanguage(e.target.dataset.code);
     };
+
     // Set viewport height
     useEffect(() => {
         document.documentElement.style.setProperty("--vh", `${vh}px`);

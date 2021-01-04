@@ -58,13 +58,6 @@ a {
     font-weight: 400;
 }
 
-.container {
-    height: calc(var(--vh, 1vh) * 100);
-    min-width: 100%;
-    margin: auto;
-    padding: 2% 10%;
-}
-
 .section {
     min-height: 100vh;
     width: 100%;
