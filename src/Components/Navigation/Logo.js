@@ -1,7 +1,9 @@
 import React from "react";
+import smoothscroll from "smoothscroll-polyfill";
 import styles from "../../CSS/Navigation/Logo.module.css";
 
 const Logo = ({ scroll }) => {
+    smoothscroll.polyfill();
     return (
         <header
             className={styles.logoContainer}

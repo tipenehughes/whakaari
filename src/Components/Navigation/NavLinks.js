@@ -1,7 +1,9 @@
 import React from "react";
+import smoothscroll from 'smoothscroll-polyfill';
 import styles from "../../CSS/Navigation/NavLinks.module.css";
 
 const NavLinks = ({ navigationLinks, scroll }) => {
+    smoothscroll.polyfill();
     const scrollTo = (e, link) => {
         e.preventDefault();
         const aboutSection = document.getElementById(link);

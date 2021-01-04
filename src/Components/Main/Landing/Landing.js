@@ -1,12 +1,14 @@
 import React from "react";
 import MobileLogo from "./MobileLogo";
 import Background from "./Background";
+import smoothscroll from 'smoothscroll-polyfill';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import language from "../../../Languages/languages.json";
 import styles from "../../../CSS/Landing/Landing.module.css";
 
 const Landing = ({ lang }) => {
+    smoothscroll.polyfill();
     const scrollToAbout = () => {
         const aboutSection = document.getElementById(
             language[lang].navigation.about

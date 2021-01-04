@@ -1,5 +1,7 @@
 import React from "react";
 
+import smoothscroll from 'smoothscroll-polyfill';
+
 import english from "../../Assets/img/flags/english.svg";
 import czech from "../../Assets/img/flags/czech.svg";
 import polish from "../../Assets/img/flags/polish.svg";
@@ -39,6 +41,7 @@ const MobileNav = ({
         },
     };
     // Scroll to links
+    smoothscroll.polyfill();
     const scrollTo = (e, link) => {
         e.preventDefault();
         const aboutSection = document.getElementById(link);

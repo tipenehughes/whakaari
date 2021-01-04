@@ -1,4 +1,5 @@
 import React from "react";
+import smoothscroll from "smoothscroll-polyfill";
 import sponsor from "../../Assets/img/sponsor.png";
 import language from "../../Languages/languages.json";
 import styles from "../../CSS/Footer/Footer.module.css";
@@ -10,6 +11,7 @@ const Footer = ({ lang }) => {
         language[lang].navigation.gallery,
         language[lang].navigation.contact,
     ];
+    smoothscroll.polyfill();
     const scrollTo = (e, link) => {
         e.preventDefault();
         const aboutSection = document.getElementById(link);

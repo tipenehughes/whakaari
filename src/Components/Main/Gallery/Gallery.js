@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
-import Carousel from "./Carousel";
+import smoothscroll from 'smoothscroll-polyfill';
 
+import Carousel from "./Carousel";
 import language from "../../../Languages/languages.json";
 
 import img1 from "../../../Assets/img/gallery/slide1.png";
@@ -37,6 +38,7 @@ const Gallery = ({ lang }) => {
             : setCarouselImage(images.length - 1);
     };
     // Scroll trigger for button
+    smoothscroll.polyfill();
     const scrollToContact = () => {
         const aboutSection = document.getElementById(
             language[lang].navigation.contact

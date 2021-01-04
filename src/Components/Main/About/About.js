@@ -1,9 +1,11 @@
 import React from "react";
 import img from "../../../Assets/img/about.jpg";
 import language from "../../../Languages/languages.json";
+import smoothscroll from 'smoothscroll-polyfill';
 import styles from "../../../CSS/Main/About/About.module.css";
 
 const About = ({ lang }) => {
+    smoothscroll.polyfill();
     const scrollToContact = () => {
         const aboutSection = document.getElementById(
             language[lang].navigation.contact
