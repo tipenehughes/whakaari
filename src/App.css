@@ -59,7 +59,7 @@ a {
 }
 
 .container {
-    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
     min-width: 100%;
     margin: auto;
     padding: 2% 10%;

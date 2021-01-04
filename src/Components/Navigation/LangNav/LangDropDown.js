@@ -36,7 +36,7 @@ const LangDropDown = ({
                                 handleSetLanguage(event);
                             }}
                         >
-                            <a class={styles.langActive} href="#placeholder">
+                            <a className={styles.langActive} href="#placeholder">
                                 <img src={lang.lang} id="en" alt="English" />
                                 <p>{lang.code}</p>
                             </a>

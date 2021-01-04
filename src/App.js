@@ -13,6 +13,13 @@ function App() {
         return setLanguage(e.target.dataset.code);
     };
 
+    // Set viewport height
+    window.addEventListener("resize", () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+        console.log(vh);
+    });
+
     return (
         <div className="App">
             <NavBar handleSetLanguage={handleSetLanguage} lang={language} />
