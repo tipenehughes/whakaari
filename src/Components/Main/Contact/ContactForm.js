@@ -70,7 +70,7 @@ const ContactForm = ({ lang }) => {
                         console.log(error);
                         toastError();
                         setSubmitting(false);
-                    });
+                    });                
             }}
         >
             {({ errors, touched, isSubmitting }) => (
