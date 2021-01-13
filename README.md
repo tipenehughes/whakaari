@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://whakaari.netlify.app/">
+    <img src="src/Assets/img/Thumbnails/logo.png" alt="Logo" width="250" height="100">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h1 align="center">WHAKAARI ROTORUA</h3>
 
-## Available Scripts
+  <p align="center">
+    Whakaari Rotorua are a group of performers from Rotorua, New Zealand, who travel around the world sharing their Māori culture through traditional song and dance.  
+    <br />
+    <br />
+    :round_pushpin:<a href="https://whakaari.netlify.app/">View Demo</a>
+  </p>
+</p>
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#description-ledger">Description</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started-wrench">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage-mag">Usage</a></li>    
+    <li><a href="#contact-mailbox_with_mail">Contact</a></li>
+    <li><a href="#acknowledgements-clap">Acknowledgements</a></li>
+  </ol>
+</details>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- ABOUT THE PROJECT -->
+## Description :ledger:
 
-### `npm run build`
+<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[![Porject image][project-image]](src/Assets/img/Thumbnails/whakaari.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This website is built as an informational/brochure website for an indigenous performance arts group from my home country of New Zealand. As this group spends a large amount of their time touring Europe, multi-lingual support has been implemented with React to ensure exposure to their target audiences. An upcoming tour data carousel displaying tour dates, times and locations is present, alongside video media and an image gallery. Finally, a contact form is implemented with Formik and handled through Netlify forms.
 
-### `npm run eject`
+Keep reading to see more about this project!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Built With 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* [React](https://reactjs.org/)
+* [CSS Modules](https://github.com/css-modules/css-modules)
+* [Formik](https://formik.org/)
+* [Framer Motion](https://www.framer.com/motion/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- GETTING STARTED -->
+## Getting Started :wrench:
 
-## Learn More
+Follow these steps to get a local copy up and running.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-### Code Splitting
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone the repo
+   ```sh
+   git clone https://github.com/tipenehughes/whakaari
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run the app
+   ```sh
+   npm start
+   ```
 
-### Analyzing the Bundle Size
+<!-- USAGE EXAMPLES -->
+## Usage :mag:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+:round_pushpin:<a href="https://github.com/tipenehughes/whakaari">View Live Demo Here!</a>
+<br/>
+[site-gif]: src/Assets/img/Thumbnails/site.gif
+<br/>
+<br/>
+[language-gif]: src/Assets/img/Thumbnails/language.gif
+<br/>
+<br/>
+:point_up: Language picker
+<br />
+[tours-gif]: src/Assets/img/Thumbnails/tours.gif
+<br/>
+<br/>
+:point_up: Upcoming tours carousel
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- CONTACT -->
+## Contact :mailbox_with_mail:
 
-### Advanced Configuration
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+:e-mail: tipenehughes@gmail.com
 
-### Deployment
+Project Link: [https://github.com/tipenehughes/whakaari](https://github.com/tipenehughes/whakaari)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements :clap:
+* [Font Awesome](https://fontawesome.com/)
+* [Yup](https://github.com/jquense/yup)
+* [React Toastify](https://github.com/fkhadra/react-toastify)
+* [Smooth Scroll](https://github.com/iamdustan/smoothscroll)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=2867B2
+[linkedin-url]: https://www.linkedin.com/in/tipene-hughes/
+[project-image]: src/Assets/img/Thumbnails/whakaari.png
+[site-gif]: src/Assets/img/Thumbnails/site.gif
+[language-gif]: src/Assets/img/Thumbnails/language.gif
+[tours-gif]: src/Assets/img/Thumbnails/tours.gif
