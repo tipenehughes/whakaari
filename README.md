@@ -95,16 +95,16 @@ Follow these steps to get a local copy up and running.
 
 :round_pushpin:<a href="https://github.com/tipenehughes/whakaari">View Live Demo Here!</a>
 <br/>
-[site-gif]: src/Assets/img/Thumbnails/site.gif
+<br/>
+[![Site gif][site-gif]](src/Assets/img/Thumbnails/site.gif)
 <br/>
 <br/>
-[language-gif]: src/Assets/img/Thumbnails/language.gif
-<br/>
+[![Language gif][language-gif]](src/Assets/img/Thumbnails/language.gif)
 <br/>
 :point_up: Language picker
-<br />
-[tours-gif]: src/Assets/img/Thumbnails/tours.gif
 <br/>
+<br />
+[![Tours gif][tours-gif]](src/Assets/img/Thumbnails/tours.gif)
 <br/>
 :point_up: Upcoming tours carousel
 
