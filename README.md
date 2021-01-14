@@ -116,7 +116,7 @@ Follow these steps to get a local copy up and running.
 
 :e-mail: tipenehughes@gmail.com
 
-Project Link: [https://github.com/tipenehughes/whakaari](https://github.com/tipenehughes/whakaari)
+Project Link: [https://whakaari.netlify.app/](https://whakaari.netlify.app/)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements :clap:
